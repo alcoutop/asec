@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Asec</title>
-    <link>https://www.asec.com.br/tags/</link>
+    <link>https://d1qb4nssmea954.cloudfront.net/tags/</link>
     <description>Recent content in Tags on Asec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Sun, 25 Oct 2026 09:00:00 -0300</lastBuildDate>
-    <atom:link href="https://www.asec.com.br/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://d1qb4nssmea954.cloudfront.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Defesa Em Profundidade</title>
-      <link>https://www.asec.com.br/tags/defesa-em-profundidade/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/defesa-em-profundidade/</link>
       <pubDate>Sun, 25 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/defesa-em-profundidade/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/defesa-em-profundidade/</guid>
       <description></description>
     </item>
     <item>
       <title>Proteção De Dados</title>
-      <link>https://www.asec.com.br/tags/prote%C3%A7%C3%A3o-de-dados/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/prote%C3%A7%C3%A3o-de-dados/</link>
       <pubDate>Sun, 25 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/prote%C3%A7%C3%A3o-de-dados/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/prote%C3%A7%C3%A3o-de-dados/</guid>
       <description></description>
     </item>
     <item>
       <title>Zero Trust</title>
-      <link>https://www.asec.com.br/tags/zero-trust/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/zero-trust/</link>
       <pubDate>Sun, 25 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/zero-trust/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/zero-trust/</guid>
       <description></description>
     </item>
     <item>
       <title>Estratégia 3-2-1</title>
-      <link>https://www.asec.com.br/tags/estrat%C3%A9gia-3-2-1/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/estrat%C3%A9gia-3-2-1/</link>
       <pubDate>Thu, 22 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/estrat%C3%A9gia-3-2-1/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/estrat%C3%A9gia-3-2-1/</guid>
       <description></description>
     </item>
     <item>
       <title>Imutabilidade</title>
-      <link>https://www.asec.com.br/tags/imutabilidade/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/imutabilidade/</link>
       <pubDate>Thu, 22 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/imutabilidade/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/imutabilidade/</guid>
       <description></description>
     </item>
     <item>
       <title>Última Linha De Defesa</title>
-      <link>https://www.asec.com.br/tags/%C3%BAltima-linha-de-defesa/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/</link>
       <pubDate>Tue, 20 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/tags/%C3%BAltima-linha-de-defesa/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/</guid>
       <description></description>
     </item>
   </channel>

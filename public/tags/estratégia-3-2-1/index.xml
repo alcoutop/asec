@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Estratégia 3-2-1 on Asec</title>
-    <link>https://www.asec.com.br/tags/estrat%C3%A9gia-3-2-1/</link>
+    <link>https://d1qb4nssmea954.cloudfront.net/tags/estrat%C3%A9gia-3-2-1/</link>
     <description>Recent content in Estratégia 3-2-1 on Asec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Thu, 22 Oct 2026 09:00:00 -0300</lastBuildDate>
-    <atom:link href="https://www.asec.com.br/tags/estrat%C3%A9gia-3-2-1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://d1qb4nssmea954.cloudfront.net/tags/estrat%C3%A9gia-3-2-1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estratégia 3-2-1 na Era do Ransomware: Evoluindo a Proteção de Dados</title>
-      <link>https://www.asec.com.br/posts/02-estrategia-backup-3-2-1/</link>
+      <link>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</link>
       <pubDate>Thu, 22 Oct 2026 09:00:00 -0300</pubDate>
-      <guid>https://www.asec.com.br/posts/02-estrategia-backup-3-2-1/</guid>
+      <guid>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</guid>
       <description>Como aplicar a clássica regra 3-2-1 combinada à imutabilidade e ao isolamento de rede para eliminar pontos únicos de falha na sua operação.</description>
     </item>
   </channel>
