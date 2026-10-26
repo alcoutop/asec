@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main class="bg-[#F3F7FB] min-h-screen pb-20">
+    <header class="asec-hero-bg py-16 border-b-4 border-[#00B0F0]">
+        <div class="max-w-4xl px-4 mx-auto text-center sm:px-6 lg:px-8">
+            <p class="asec-font-mono text-xs uppercase tracking-widest text-[#00B0F0] mb-3">Publicações &amp; Engenharia</p>
+            <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
+                {{ .Title }}
+            </h1>
+        </div>
+    </header>
+
+    <div class="max-w-7xl px-4 mx-auto mt-12 sm:px-6 lg:px-8">
+        <div class="grid gap-8 md:grid-cols-3">
+            {{ range .Paginator.Pages }}
+            <div class="asec-card flex flex-col justify-between p-7 bg-white">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="asec-font-mono text-xs font-semibold px-3 py-1 rounded-full bg-[#EAF3FB] text-[#0070C0] border border-[#B7C7D9]">
+                            {{ with .Params.badge }}{{ . }}{{ else }}Segurança &amp; Dados{{ end }}
+                        </span>
+                        <time class="text-xs text-[#555F6B] asec-font-mono" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+                    </div>
+                    <a href="{{ .RelPermalink }}" class="block group">
+                        <h2 class="text-xl font-bold text-[#0B2545] group-hover:text-[#0070C0] transition-colors">
+                            {{ .Title }}
+                        </h2>
+                        <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                            {{ .Params.summary }}
+                        </p>
+                    </a>
+                </div>
+                <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+                    <a href="{{ .RelPermalink }}" class="text-sm font-bold text-[#0070C0] hover:text-[#0B2545] inline-flex items-center gap-1">
+                        Ler artigo completo <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</main>
+{{ end }}

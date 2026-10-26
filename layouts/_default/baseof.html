@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "pt-br" }}" class="scroll-smooth">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428]">
+    {{ partial "nav.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

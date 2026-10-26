@@ -1,0 +1,191 @@
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicon/apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon/favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon/favicon-16x16.png" | relURL }}">
+<link rel="mask-icon" href="{{ "/favicon/safari-pinned-tab.svg" | relURL }}" color="#00B0F0">
+<meta name="msapplication-TileColor" content="#0B2545">
+<meta name="theme-color" content="#081C36">
+{{ partial "meta" . }}
+
+<!-- Google Fonts: Inter & JetBrains Mono -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+{{ $styles := resources.Get "/css/style.css" | postCSS }}
+{{ if hugo.IsProduction }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ end }}
+
+<style>
+  :root {
+    --asec-navy-deep: #0B2545;
+    --asec-navy-cover-top: #0A2444;
+    --asec-navy-midnight: #081C36;
+    --asec-navy-abyss: #051428;
+    --asec-cyan-primary: #00B0F0;
+    --asec-cyan-hover: #0099D1;
+    --asec-blue-tech: #0070C0;
+    --asec-blue-hover: #005A9E;
+    --asec-bg-white: #FFFFFF;
+    --asec-bg-zebra: #F3F7FB;
+    --asec-surface-ice: #EAF3FB;
+    --asec-surface-scen2: #DCE9F5;
+    --asec-surface-scen3: #D8F0EC;
+    --asec-surface-amber: #FDF3E6;
+    --asec-text-dark: #0B2545;
+    --asec-text-body: #1E293B;
+    --asec-text-muted: #555F6B;
+    --asec-text-on-dark: #FFFFFF;
+    --asec-text-ice-muted: #A8BED6;
+    --asec-border-steel: #B7C7D9;
+    --asec-font-sans: 'Inter', 'Segoe UI', Calibri, -apple-system, sans-serif;
+    --asec-font-mono: 'JetBrains Mono', Consolas, monospace;
+  }
+
+  body.asec-body {
+    font-family: var(--asec-font-sans);
+    color: var(--asec-text-body);
+    background-color: var(--asec-bg-white);
+  }
+
+  .asec-font-mono {
+    font-family: var(--asec-font-mono);
+  }
+
+  .asec-navbar {
+    background-color: rgba(8, 28, 54, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 176, 240, 0.25);
+  }
+
+  .asec-hero-bg {
+    background-color: #081C36;
+    background-image:
+      repeating-linear-gradient(
+        -62deg,
+        transparent,
+        transparent 22px,
+        rgba(0, 176, 240, 0.08) 22px,
+        rgba(0, 176, 240, 0.08) 24px
+      ),
+      linear-gradient(160deg, #0A2444 0%, #081C36 55%, #051428 100%);
+    color: #FFFFFF;
+  }
+
+  .asec-dark-section {
+    background-color: #081C36;
+    background-image: linear-gradient(180deg, #081C36 0%, #051428 100%);
+    color: #FFFFFF;
+  }
+
+  .asec-zebra-section {
+    background-color: #F3F7FB;
+  }
+
+  .asec-footer-bg {
+    background-color: #051428;
+    border-top: 3px solid #00B0F0;
+    color: #A8BED6;
+  }
+
+  .asec-divider-cyan {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #00B0F0 0%, #0070C0 60%, rgba(0, 176, 240, 0.15) 100%);
+    border: none;
+  }
+
+  .asec-btn-primary {
+    background-color: #00B0F0;
+    color: #051428;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 24px rgba(0, 176, 240, 0.28);
+  }
+  .asec-btn-primary:hover {
+    background-color: #33C3F7;
+    transform: translateY(-1px);
+    box-shadow: 0 0 32px rgba(0, 176, 240, 0.45);
+  }
+
+  .asec-btn-outline {
+    border: 1.5px solid #00B0F0;
+    color: #00B0F0;
+    background-color: rgba(0, 176, 240, 0.06);
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .asec-btn-outline:hover {
+    background-color: rgba(0, 176, 240, 0.16);
+    color: #FFFFFF;
+  }
+
+  .asec-btn-navy {
+    background-color: #0B2545;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+  .asec-btn-navy:hover {
+    background-color: #0070C0;
+  }
+
+  .asec-pill {
+    font-family: var(--asec-font-mono);
+    font-size: 0.8rem;
+    background-color: rgba(0, 176, 240, 0.11);
+    color: #7CE0FF;
+    border: 1px solid rgba(0, 176, 240, 0.3);
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .asec-kpi-card {
+    background: rgba(11, 37, 69, 0.65);
+    border: 1px solid rgba(0, 176, 240, 0.28);
+    border-radius: 12px;
+    padding: 1.25rem;
+    backdrop-filter: blur(8px);
+  }
+
+  .asec-card {
+    background: #FFFFFF;
+    border: 1px solid #D6E2EE;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px -5px rgba(11, 37, 69, 0.07), 0 4px 12px -2px rgba(11, 37, 69, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .asec-card:hover {
+    transform: translateY(-3px);
+    border-color: #00B0F0;
+    box-shadow: 0 16px 36px -6px rgba(11, 37, 69, 0.12);
+  }
+
+  .asec-callout {
+    background-color: #EAF3FB;
+    border-left: 4px solid #0070C0;
+    border-top: 1px solid #B7C7D9;
+    border-right: 1px solid #B7C7D9;
+    border-bottom: 1px solid #B7C7D9;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    color: #0B2545;
+  }
+
+  .asec-terminal {
+    background-color: #051428;
+    border: 1px solid rgba(0, 176, 240, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  }
+</style>

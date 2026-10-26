@@ -1,0 +1,56 @@
+<!-- Footer section -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+{{ $js := resources.Get "js/darkmode.js" | js.Build }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+
+<footer class="asec-footer-bg">
+    <div class="max-w-7xl px-4 py-14 mx-auto sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-12 pb-10 border-b border-white/10">
+            <!-- Brand Column -->
+            <div class="md:col-span-5">
+                <a href="{{ "/" | relURL }}" class="inline-block mb-4">
+                    <img src="{{ "/images/asec-logo-dark-bg.svg" | relURL }}" alt="Asec Logo" class="h-12 w-auto" />
+                </a>
+                <p class="text-sm text-[#A8BED6] max-w-md leading-relaxed">
+                    Arquitetura de Segurança da Informação, Proteção de Dados e Infraestrutura Resiliente. Projetamos a <strong class="text-white">última linha de defesa</strong> da sua empresa com <strong class="text-[#00B0F0]">imutabilidade estrita</strong>, <strong class="text-white">estratégia 3-2-1</strong> e redes <strong class="text-white">Zero Trust</strong>.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="md:col-span-3">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-[#00B0F0] mb-4">Navegação</h3>
+                <ul class="space-y-2.5 text-sm">
+                    {{ range site.Menus.footer }}
+                    <li>
+                        <a href="{{ .URL | relLangURL }}" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Direct Channels Column -->
+            <div class="md:col-span-4">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-[#00B0F0] mb-4">Canais Oficiais</h3>
+                <ul class="space-y-3 text-sm text-[#A8BED6]">
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">🌐</span>
+                        <span>Website: <a href="https://www.asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">www.asec.com.br</a></span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">✉️</span>
+                        <span>Comercial &amp; Projetos: <a href="mailto:contato@asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">contato@asec.com.br</a></span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">🛡️</span>
+                        <span>Operações &amp; NOC: <a href="mailto:noc@asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">noc@asec.com.br</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A8BED6]/80 gap-4">
+            <p>&copy; {{ now.Format "2006" }} <strong class="text-white">Asec — Segurança da Informação &amp; Infraestrutura</strong>. Todos os direitos reservados.</p>
+            <p class="asec-font-mono text-[11px] text-[#00B0F0]/90">Última Linha de Defesa • Proteção de Dados • Imutabilidade • Estratégia 3-2-1</p>
+        </div>
+    </div>
+</footer>

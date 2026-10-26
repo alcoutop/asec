@@ -1,0 +1,144 @@
+baseURL: 'https://www.asec.com.br/'
+title: Asec
+theme: "tailbliss"
+languageCode: pt-br
+DefaultContentLanguage: pt-br
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: false
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+params:
+  author: "Asec — Segurança da Informação & Infraestrutura"
+  moto: "Segurança da Informação & Infraestrutura"
+  tagline: "SEGURANÇA DA INFORMAÇÃO & INFRAESTRUTURA"
+  description: "Sua última linha de defesa contra Ransomware. Proteção de dados corporativos com imutabilidade estrita, estratégia 3-2-1 e arquitetura Zero Trust."
+  og_image: "/images/asec-logo-dark-bg.png"
+  email: "contato@asec.com.br"
+  noc_email: "noc@asec.com.br"
+  domain: "www.asec.com.br"
+  disable_theme_toggle: true
+  disable_stay_uptodate: false
+
+  p4:
+    heading: "Insights & Engenharia de Segurança"
+    content:
+      - text: "Artigos estratégicos sobre proteção de dados, imutabilidade, estratégia 3-2-1 e resiliência cibernética corporativa."
+
+  p5:
+    heading: "Pronto para blindar os dados críticos da sua empresa?"
+    content:
+      - text: "Solicite um diagnóstico confidencial de proteção de dados e descubra como implementar uma última linha de defesa 100% imutável."
+    action: "https://formspree.io/f/movlrpne"
+    label: "E-mail corporativo"
+    placeholder: "seu.nome@empresa.com.br"
+    button: "Solicitar Diagnóstico"
+
+  social_media:
+    github:
+      enabled: false
+      url: 'https://github.com/alcoutop/asec'
+    facebook:
+      enabled: false
+      url: '#'
+    instagram:
+      enabled: false
+      url: '#'
+    twitter:
+      enabled: false
+      url: '#'
+
+menu:
+  main:
+    - identifier: home
+      name: Início
+      url: /
+      weight: 10
+    - identifier: solucoes
+      name: Soluções
+      url: /#solucoes
+      weight: 20
+    - identifier: estrategia
+      name: Estratégia 3-2-1
+      url: /#estrategia-321
+      weight: 30
+    - identifier: imutabilidade
+      name: Imutabilidade
+      url: /#imutabilidade
+      weight: 40
+    - identifier: categories
+      pre: dropdown
+      name: Artigos
+      weight: 50
+    - identifier: sobre
+      name: Sobre a Asec
+      url: /sobre/
+      weight: 60
+    - identifier: contato
+      name: Contato
+      url: /contato/
+      weight: 70
+
+  categories:
+    - identifier: ultima-linha
+      name: A Última Linha de Defesa
+      url: /posts/01-ultima-linha-de-defesa/
+      weight: 10
+    - identifier: estrategia-321
+      name: Estratégia de Backup 3-2-1
+      url: /posts/02-estrategia-backup-3-2-1/
+      weight: 20
+    - identifier: zero-trust
+      name: Zero Trust & Proteção de Dados
+      url: /posts/03-zero-trust-protecao-dados/
+      weight: 30
+
+  footer:
+    - identifier: home
+      name: Início
+      url: /
+      weight: 10
+    - identifier: solucoes
+      name: Soluções
+      url: /#solucoes
+      weight: 20
+    - identifier: estrategia
+      name: Estratégia 3-2-1
+      url: /#estrategia-321
+      weight: 30
+    - identifier: sobre
+      name: Sobre a Asec
+      url: /sobre/
+      weight: 40
+    - identifier: contato
+      name: Contato
+      url: /contato/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    disable: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+
+server:
+  headers:
+    - for: /**
+      values:
+        Referrer-Policy: strict-origin-when-cross-origin

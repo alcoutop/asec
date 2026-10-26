@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+	<meta name="generator" content="Hugo 0.123.7">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00B0F0">
+<meta name="msapplication-TileColor" content="#0B2545">
+<meta name="theme-color" content="#081C36">
+<title itemprop="name"> Sua última linha de defesa contra Ransomware. Proteção de dados corporativos com imutabilidade estrita, estratégia 3-2-1 e arquitetura Zero Trust. | Asec
+    
+</title>
+<meta name="description" content="Sua última linha de defesa contra Ransomware. Proteção de dados corporativos com imutabilidade estrita, estratégia 3-2-1 e arquitetura Zero Trust." />
+<meta property="og:title" content="Asec | Asec" />
+<meta name="twitter:title" content="Asec | Asec" />
+<meta itemprop="name" content="Asec | Asec" />
+<meta name="application-name" content="Asec | Asec" />
+<meta property="og:description"
+      content="Sua última linha de defesa contra Ransomware. Proteção de dados corporativos com imutabilidade estrita, estratégia 3-2-1 e arquitetura Zero Trust." />
+<meta property="og:site_name" content="Asec" />
+<meta property="og:url" content="https://www.asec.com.br/" />
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/images/asec-logo-dark-bg.png" />
+<meta property="og:image:secure_url" content="https://www.asec.com.br/images/asec-logo-dark-bg.png" />
+<meta property="og:type" content="website" />
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+
+<style>
+  :root {
+    --asec-navy-deep: #0B2545;
+    --asec-navy-cover-top: #0A2444;
+    --asec-navy-midnight: #081C36;
+    --asec-navy-abyss: #051428;
+    --asec-cyan-primary: #00B0F0;
+    --asec-cyan-hover: #0099D1;
+    --asec-blue-tech: #0070C0;
+    --asec-blue-hover: #005A9E;
+    --asec-bg-white: #FFFFFF;
+    --asec-bg-zebra: #F3F7FB;
+    --asec-surface-ice: #EAF3FB;
+    --asec-surface-scen2: #DCE9F5;
+    --asec-surface-scen3: #D8F0EC;
+    --asec-surface-amber: #FDF3E6;
+    --asec-text-dark: #0B2545;
+    --asec-text-body: #1E293B;
+    --asec-text-muted: #555F6B;
+    --asec-text-on-dark: #FFFFFF;
+    --asec-text-ice-muted: #A8BED6;
+    --asec-border-steel: #B7C7D9;
+    --asec-font-sans: 'Inter', 'Segoe UI', Calibri, -apple-system, sans-serif;
+    --asec-font-mono: 'JetBrains Mono', Consolas, monospace;
+  }
+
+  body.asec-body {
+    font-family: var(--asec-font-sans);
+    color: var(--asec-text-body);
+    background-color: var(--asec-bg-white);
+  }
+
+  .asec-font-mono {
+    font-family: var(--asec-font-mono);
+  }
+
+  .asec-navbar {
+    background-color: rgba(8, 28, 54, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 176, 240, 0.25);
+  }
+
+  .asec-hero-bg {
+    background-color: #081C36;
+    background-image:
+      repeating-linear-gradient(
+        -62deg,
+        transparent,
+        transparent 22px,
+        rgba(0, 176, 240, 0.08) 22px,
+        rgba(0, 176, 240, 0.08) 24px
+      ),
+      linear-gradient(160deg, #0A2444 0%, #081C36 55%, #051428 100%);
+    color: #FFFFFF;
+  }
+
+  .asec-dark-section {
+    background-color: #081C36;
+    background-image: linear-gradient(180deg, #081C36 0%, #051428 100%);
+    color: #FFFFFF;
+  }
+
+  .asec-zebra-section {
+    background-color: #F3F7FB;
+  }
+
+  .asec-footer-bg {
+    background-color: #051428;
+    border-top: 3px solid #00B0F0;
+    color: #A8BED6;
+  }
+
+  .asec-divider-cyan {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #00B0F0 0%, #0070C0 60%, rgba(0, 176, 240, 0.15) 100%);
+    border: none;
+  }
+
+  .asec-btn-primary {
+    background-color: #00B0F0;
+    color: #051428;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 24px rgba(0, 176, 240, 0.28);
+  }
+  .asec-btn-primary:hover {
+    background-color: #33C3F7;
+    transform: translateY(-1px);
+    box-shadow: 0 0 32px rgba(0, 176, 240, 0.45);
+  }
+
+  .asec-btn-outline {
+    border: 1.5px solid #00B0F0;
+    color: #00B0F0;
+    background-color: rgba(0, 176, 240, 0.06);
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .asec-btn-outline:hover {
+    background-color: rgba(0, 176, 240, 0.16);
+    color: #FFFFFF;
+  }
+
+  .asec-btn-navy {
+    background-color: #0B2545;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+  .asec-btn-navy:hover {
+    background-color: #0070C0;
+  }
+
+  .asec-pill {
+    font-family: var(--asec-font-mono);
+    font-size: 0.8rem;
+    background-color: rgba(0, 176, 240, 0.11);
+    color: #7CE0FF;
+    border: 1px solid rgba(0, 176, 240, 0.3);
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .asec-kpi-card {
+    background: rgba(11, 37, 69, 0.65);
+    border: 1px solid rgba(0, 176, 240, 0.28);
+    border-radius: 12px;
+    padding: 1.25rem;
+    backdrop-filter: blur(8px);
+  }
+
+  .asec-card {
+    background: #FFFFFF;
+    border: 1px solid #D6E2EE;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px -5px rgba(11, 37, 69, 0.07), 0 4px 12px -2px rgba(11, 37, 69, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .asec-card:hover {
+    transform: translateY(-3px);
+    border-color: #00B0F0;
+    box-shadow: 0 16px 36px -6px rgba(11, 37, 69, 0.12);
+  }
+
+  .asec-callout {
+    background-color: #EAF3FB;
+    border-left: 4px solid #0070C0;
+    border-top: 1px solid #B7C7D9;
+    border-right: 1px solid #B7C7D9;
+    border-bottom: 1px solid #B7C7D9;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    color: #0B2545;
+  }
+
+  .asec-terminal {
+    background-color: #051428;
+    border: 1px solid rgba(0, 176, 240, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  }
+</style>
+
+</head>
+
+<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428]">
+    <header class="asec-navbar sticky top-0 z-50 w-full text-white">
+    <div x-data="{ open: false }" class="max-w-7xl px-4 mx-auto md:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            
+            <a href="/" class="flex items-center group focus:outline-none" aria-label="Asec — Segurança da Informação & Infraestrutura">
+                <img src="/images/asec-logo-dark-bg.svg" alt="Asec — Segurança da Informação & Infraestrutura" class="h-12 w-auto transition-transform duration-200 group-hover:scale-[1.02]" />
+            </a>
+
+            
+            <button class="p-2 rounded-lg md:hidden text-gray-200 hover:text-[#00B0F0] focus:outline-none" @click="open = !open" aria-label="Menu Principal">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-7 h-7">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+            
+            <nav class="hidden md:flex md:items-center md:space-x-1 lg:space-x-2">
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/" title="Início">
+                    Início
+                </a>
+                
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#solucoes" title="Soluções">
+                    Soluções
+                </a>
+                
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#estrategia-321" title="Estratégia 3-2-1">
+                    Estratégia 3-2-1
+                </a>
+                
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#imutabilidade" title="Imutabilidade">
+                    Imutabilidade
+                </a>
+                
+                
+                
+                <div @click.away="openDrop = false" class="relative" x-data="{ openDrop: false }">
+                    <button @click="openDrop = !openDrop" class="flex items-center px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 focus:outline-none transition-colors">
+                        <span>Artigos</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openDrop, 'rotate-0': !openDrop}" class="w-4 h-4 ml-1 transition-transform duration-200">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="openDrop" x-transition class="absolute right-0 z-40 w-64 mt-2 origin-top-right rounded-xl shadow-2xl bg-[#081C36] border border-[#00B0F0]/30 py-2">
+                        
+                        <a class="block px-4 py-2.5 text-sm font-medium text-gray-200 hover:bg-[#00B0F0]/15 hover:text-[#00B0F0] transition-colors" href="/posts/01-ultima-linha-de-defesa/">
+                            A Última Linha de Defesa
+                        </a>
+                        
+                        <a class="block px-4 py-2.5 text-sm font-medium text-gray-200 hover:bg-[#00B0F0]/15 hover:text-[#00B0F0] transition-colors" href="/posts/02-estrategia-backup-3-2-1/">
+                            Estratégia de Backup 3-2-1
+                        </a>
+                        
+                        <a class="block px-4 py-2.5 text-sm font-medium text-gray-200 hover:bg-[#00B0F0]/15 hover:text-[#00B0F0] transition-colors" href="/posts/03-zero-trust-protecao-dados/">
+                            Zero Trust &amp; Proteção de Dados
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/sobre/" title="Sobre a Asec">
+                    Sobre a Asec
+                </a>
+                
+                
+                
+                <a class="px-3 py-2 text-sm font-semibold text-gray-200 rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/contato/" title="Contato">
+                    Contato
+                </a>
+                
+                
+
+                <a href="/contato/" class="ml-4 px-4 py-2.5 text-sm rounded-lg asec-btn-primary">
+                    Solicitar Diagnóstico
+                </a>
+            </nav>
+        </div>
+
+        
+        <div x-show="open" x-transition class="md:hidden pb-5 pt-2 border-t border-[#00B0F0]/20 space-y-1">
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/">
+                Início
+            </a>
+            
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/#solucoes">
+                Soluções
+            </a>
+            
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/#estrategia-321">
+                Estratégia 3-2-1
+            </a>
+            
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/#imutabilidade">
+                Imutabilidade
+            </a>
+            
+            
+            
+            <div class="px-3 py-2">
+                <p class="text-xs font-bold uppercase tracking-wider text-[#00B0F0] mb-2">Artigos</p>
+                <div class="pl-3 space-y-1 border-l border-[#00B0F0]/30">
+                    
+                    <a class="block py-1.5 text-sm text-gray-300 hover:text-[#00B0F0]" href="/posts/01-ultima-linha-de-defesa/">A Última Linha de Defesa</a>
+                    
+                    <a class="block py-1.5 text-sm text-gray-300 hover:text-[#00B0F0]" href="/posts/02-estrategia-backup-3-2-1/">Estratégia de Backup 3-2-1</a>
+                    
+                    <a class="block py-1.5 text-sm text-gray-300 hover:text-[#00B0F0]" href="/posts/03-zero-trust-protecao-dados/">Zero Trust &amp; Proteção de Dados</a>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/sobre/">
+                Sobre a Asec
+            </a>
+            
+            
+            
+            <a class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/contato/">
+                Contato
+            </a>
+            
+            
+            <div class="pt-3 px-3">
+                <a href="/contato/" class="block w-full text-center px-4 py-3 rounded-lg asec-btn-primary">
+                    Solicitar Diagnóstico
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+<main>
+    
+    <section class="asec-hero-bg relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="grid items-center gap-12 lg:grid-cols-12">
+                
+                <div class="lg:col-span-7 text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 rounded-full bg-[#00B0F0]/15 border border-[#00B0F0]/40">
+                        <img src="/images/asec-icon-shield.svg" alt="Escudo Asec" class="w-4 h-4" />
+                        <span class="asec-font-mono text-xs font-semibold tracking-wider uppercase text-[#00B0F0]">
+                            Segurança da Informação &amp; Infraestrutura
+                        </span>
+                    </div>
+
+                    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl xl:text-6xl leading-[1.12]">
+                        Sua Última Linha de Defesa.<br />
+                        <span class="text-[#00B0F0]">Proteção de Dados com Imutabilidade Real.</span>
+                    </h1>
+
+                    <p class="max-w-2xl mt-6 text-lg text-[#CBD5E1] leading-relaxed">
+                        Ataques cibernéticos modernos miram primeiro nos seus backups para impedir a recuperação. A <strong class="text-white">Asec</strong> blinda a continuidade do seu negócio com <strong class="text-white">proteção de dados</strong> em camadas, <strong class="text-[#00B0F0]">imutabilidade estrita (WORM)</strong>, arquitetura <strong class="text-white">Zero Trust</strong> e a evolução da <strong class="text-white">estratégia 3-2-1</strong>.
+                    </p>
+
+                    
+                    <div class="flex flex-wrap gap-2 mt-7">
+                        <span class="asec-pill">🛡️ Última Linha de Defesa</span>
+                        <span class="asec-pill">🔒 Imutabilidade WORM</span>
+                        <span class="asec-pill">📦 Estratégia 3-2-1</span>
+                        <span class="asec-pill">🌐 Arquitetura Zero Trust</span>
+                        <span class="asec-pill">🔑 Criptografia na Origem</span>
+                    </div>
+
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-9">
+                        <a href="/contato/" class="px-7 py-4 text-base text-center rounded-xl asec-btn-primary">
+                            Solicitar Diagnóstico de Segurança
+                        </a>
+                        <a href="#estrategia-321" class="px-7 py-4 text-base text-center rounded-xl asec-btn-outline">
+                            Conhecer a Estratégia 3-2-1 Imutável
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="lg:col-span-5">
+                    <div class="asec-terminal p-6 sm:p-8 relative">
+                        <div class="flex items-center justify-between pb-4 mb-6 border-b border-[#00B0F0]/25">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-[#00B0F0]"></span>
+                                <span class="w-3 h-3 rounded-full bg-[#0070C0]"></span>
+                                <span class="w-3 h-3 rounded-full bg-slate-600"></span>
+                                <span class="ml-2 asec-font-mono text-xs text-[#A8BED6]">ARQUITETURA DE RESILIÊNCIA ASEC</span>
+                            </div>
+                            <span class="asec-font-mono text-[11px] px-2.5 py-0.5 rounded bg-[#00B0F0]/20 text-[#00B0F0] font-semibold">
+                                WORM ATIVO
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            
+                            <div class="p-4 rounded-lg bg-[#081C36] border border-[#00B0F0]/25">
+                                <div class="flex items-center justify-between">
+                                    <span class="asec-font-mono text-xs text-[#00B0F0] font-bold">01 • PERÍMETRO &amp; ZERO TRUST</span>
+                                    <span class="asec-font-mono text-[11px] text-emerald-400">0 Portas Expostas</span>
+                                </div>
+                                <p class="mt-1 text-xs text-[#A8BED6]">Isolamento lógico de rede, superfície externa invisível e comunicação autenticada ponta a ponta.</p>
+                            </div>
+
+                            
+                            <div class="p-4 rounded-lg bg-[#081C36] border border-[#00B0F0]/25">
+                                <div class="flex items-center justify-between">
+                                    <span class="asec-font-mono text-xs text-[#00B0F0] font-bold">02 • PROTEÇÃO DE DADOS NA ORIGEM</span>
+                                    <span class="asec-font-mono text-[11px] text-emerald-400">Criptografia E2EE</span>
+                                </div>
+                                <p class="mt-1 text-xs text-[#A8BED6]">Dados criptografados, deduplicados e comprimidos antes mesmo de saírem do servidor ou estação.</p>
+                            </div>
+
+                            
+                            <div class="p-4 rounded-lg bg-[#081C36] border border-[#00B0F0]/25">
+                                <div class="flex items-center justify-between">
+                                    <span class="asec-font-mono text-xs text-[#00B0F0] font-bold">03 • ESTRATÉGIA 3-2-1-1-0</span>
+                                    <span class="asec-font-mono text-[11px] text-emerald-400">Redundância Multi-Nível</span>
+                                </div>
+                                <p class="mt-1 text-xs text-[#A8BED6]">Múltiplas cópias independentes em mídias distintas com isolamento contra falhas físicas e lógicas.</p>
+                            </div>
+
+                            
+                            <div class="p-4 rounded-lg bg-[#0B2545] border-2 border-[#00B0F0]">
+                                <div class="flex items-center justify-between">
+                                    <span class="asec-font-mono text-xs text-white font-bold">04 • ÚLTIMA LINHA DE DEFESA</span>
+                                    <span class="asec-font-mono text-[11px] px-2 py-0.5 rounded bg-[#00B0F0] text-[#051428] font-bold">IMUTÁVEL</span>
+                                </div>
+                                <p class="mt-1.5 text-xs text-white/90">Cofre de imutabilidade estrita: nenhum arquivo pode ser alterado, criptografado ou apagado durante a retenção — nem mesmo com credenciais administrativas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="grid grid-cols-1 gap-4 mt-14 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="asec-kpi-card">
+                    <p class="asec-font-mono text-2xl font-extrabold text-[#00B0F0]">100% Imutável</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Tecnologia WORM Estrita</p>
+                    <p class="mt-1 text-xs text-[#A8BED6]">Seus backups não podem ser apagados ou sobrescritos por ataques de ransomware.</p>
+                </div>
+                <div class="asec-kpi-card">
+                    <p class="asec-font-mono text-2xl font-extrabold text-[#00B0F0]">Padrão 3-2-1</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Arquitetura Resiliente</p>
+                    <p class="mt-1 text-xs text-[#A8BED6]">3 cópias dos dados, 2 mídias diferentes e 1 cópia isolada e imutável fora de risco.</p>
+                </div>
+                <div class="asec-kpi-card">
+                    <p class="asec-font-mono text-2xl font-extrabold text-[#00B0F0]">Zero Trust</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Superfície Externa Zero</p>
+                    <p class="mt-1 text-xs text-[#A8BED6]">Nenhuma porta exposta na Internet e bloqueio total contra movimentação lateral.</p>
+                </div>
+                <div class="asec-kpi-card">
+                    <p class="asec-font-mono text-2xl font-extrabold text-[#00B0F0]">Última Defesa</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Recuperação Garantida</p>
+                    <p class="mt-1 text-xs text-[#A8BED6]">Restauração rápida Point-in-Time para retomar a operação sem pagar resgates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="asec-divider-cyan" />
+
+    
+    <section id="ameaca" class="py-20 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="asec-font-mono text-xs font-bold uppercase tracking-widest text-[#0070C0]">Cenário de Ameaças Modernas</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-[#0B2545] sm:text-4xl">
+                    O primeiro alvo do ransomware moderno não é o seu servidor — é o seu backup.
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Quando um atacante obtém credenciais privilegiadas na rede, seu objetivo imediato é destruir todas as rotinas de recuperação para forçar o pagamento do resgate. É nesse momento que a sua <strong class="text-[#0B2545]">última linha de defesa</strong> define o futuro da empresa.
+                </p>
+            </div>
+
+            <div class="grid gap-8 mt-14 lg:grid-cols-2">
+                
+                <div class="p-8 rounded-2xl bg-red-50/60 border border-red-200">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-800 text-xs font-bold uppercase tracking-wider">
+                        ⚠️ O Risco Comum: Backup Tradicional
+                    </div>
+                    <h3 class="mt-4 text-2xl font-bold text-slate-900">
+                        Vulnerável ao Sequestro de Credenciais
+                    </h3>
+                    <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                        Compartilhamentos de rede abertos (SMB/NFS), storages convencionais e discos conectados permanentemente compartilham a mesma superfície de ataque do ambiente de produção.
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold">✕</span>
+                            <span><strong>Exclusão com Credencial Comprometida:</strong> Se o atacante captura a senha de administrador, ele formata o storage de backup em segundos.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold">✕</span>
+                            <span><strong>Movimentação Lateral Livre:</strong> Ameaças propagam-se da estação infectada diretamente para os repositórios de arquivos na rede local.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold">✕</span>
+                            <span><strong>Falsa Sensação de Segurança:</strong> Ter cópias de backup que podem ser alteradas ou sobrescritas não protege contra extorsão cibernética.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="p-8 rounded-2xl bg-[#EAF3FB] border-2 border-[#0070C0] shadow-lg">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B2545] text-[#00B0F0] text-xs font-bold uppercase tracking-wider asec-font-mono">
+                        🛡️ A Blindagem Asec: Última Linha de Defesa
+                    </div>
+                    <h3 class="mt-4 text-2xl font-bold text-[#0B2545]">
+                        Imutabilidade Estrita e Isolamento Zero Trust
+                    </h3>
+                    <p class="mt-2 text-sm text-[#1E293B] leading-relaxed">
+                        A arquitetura da Asec pressupõe o pior cenário: mesmo que toda a rede local seja comprometida, seus backups permanecem 100% intactos, criptografados e prontos para restauração imediata.
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-[#0B2545]">
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#0070C0] font-bold">✓</span>
+                            <span><strong>Imutabilidade WORM Inviolável:</strong> Trava temporal estrita que bloqueia qualquer tentativa de exclusão ou modificação antes do prazo de retenção.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#0070C0] font-bold">✓</span>
+                            <span><strong>Criptografia na Origem:</strong> Os dados saem do cliente já criptografados ponta a ponta; o repositório armazena apenas blocos blindados.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#0070C0] font-bold">✓</span>
+                            <span><strong>Recuperação Point-in-Time:</strong> Restaure o ambiente exatamente ao instante anterior ao incidente, sem perda de integridade.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="solucoes" class="py-20 asec-zebra-section border-t border-b border-[#B7C7D9]/50">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="asec-font-mono text-xs font-bold uppercase tracking-widest text-[#0070C0]">Portfólio de Engenharia</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-[#0B2545] sm:text-4xl">
+                    Pilares de Proteção de Dados e Infraestrutura Resiliente
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Unimos engenharia de segurança em profundidade e infraestrutura enxuta de alta performance para proteger ativos críticos sem custos abusivos de licenciamento.
+                </p>
+            </div>
+
+            <div class="grid gap-8 mt-14 md:grid-cols-2">
+                
+                <div class="asec-card p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 text-xs font-bold rounded-md bg-[#EAF3FB] text-[#0070C0] asec-font-mono">PILAR 01 • IMUTABILIDADE</span>
+                        <span class="text-2xl">🔒</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-[#0B2545]">
+                        Backup Imutável como Última Linha de Defesa
+                    </h3>
+                    <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                        Implementação de repositórios de proteção de dados com tecnologia <strong>WORM (Write Once, Read Many)</strong> em modo de conformidade estrita. Uma vez gravado, nenhum snapshot pode ser apagado ou adulterado — garantindo recuperação limpa pós-incidente.
+                    </p>
+                </div>
+
+                
+                <div class="asec-card p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 text-xs font-bold rounded-md bg-[#DCE9F5] text-[#0B2545] asec-font-mono">PILAR 02 • ESTRATÉGIA 3-2-1</span>
+                        <span class="text-2xl">📦</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-[#0B2545]">
+                        Arquitetura de Proteção de Dados 3-2-1-1-0
+                    </h3>
+                    <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                        Desenho e operação de topologias completas seguindo a regra de ouro da resiliência cibernética: múltiplas cópias independentes, mídias distintas, isolamento fora do domínio de falha local e verificação contínua de restauração.
+                    </p>
+                </div>
+
+                
+                <div class="asec-card p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 text-xs font-bold rounded-md bg-[#D8F0EC] text-[#0B2545] asec-font-mono">PILAR 03 • ZERO TRUST</span>
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-[#0B2545]">
+                        Perímetro NGFW, Microssegmentação &amp; Zero Trust
+                    </h3>
+                    <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                        Eliminação total de portas expostas na WAN, prevenção ativa de intrusão (IDS/IPS), inteligência colaborativa contra ameaças em tempo real e acesso estritamente autenticado com privilégio mínimo entre segmentos de rede.
+                    </p>
+                </div>
+
+                
+                <div class="asec-card p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 text-xs font-bold rounded-md bg-[#FDF3E6] text-[#0B2545] asec-font-mono">PILAR 04 • INFRAESTRUTURA</span>
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-[#0B2545]">
+                        Virtualização Enxuta &amp; Alta Disponibilidade
+                    </h3>
+                    <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                        Consolidação inteligente de servidores, comutação virtualizada de alta velocidade e armazenamento tolerante a falhas. Arquiteturas modulares que escalam conforme o crescimento da sua empresa, com máximo retorno sobre o investimento (TCO).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="estrategia-321" class="py-20 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="asec-font-mono text-xs font-bold uppercase tracking-widest text-[#0070C0]">Padrão Ouro em Proteção de Dados</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-[#0B2545] sm:text-4xl">
+                    A Estratégia 3-2-1 como Base da Resiliência Corporativa
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    A Asec transforma o conceito clássico da <strong class="text-[#0B2545]">estratégia 3-2-1</strong> em uma arquitetura moderna à prova de ransomware, adicionando <strong class="text-[#0070C0]">imutabilidade estrita</strong> e validação automatizada de integridade.
+                </p>
+            </div>
+
+            
+            <div class="grid gap-6 mt-14 md:grid-cols-4">
+                
+                <div class="p-7 rounded-2xl bg-[#EAF3FB] border border-[#B7C7D9] relative overflow-hidden">
+                    <span class="asec-font-mono text-5xl font-black text-[#0070C0]/20 absolute top-3 right-4">3</span>
+                    <p class="asec-font-mono text-sm font-bold text-[#0070C0] uppercase">Passo 1</p>
+                    <h3 class="mt-2 text-2xl font-extrabold text-[#0B2545]">3 Cópias dos Dados</h3>
+                    <p class="mt-3 text-sm text-[#1E293B] leading-relaxed">
+                        Mantenha os dados primários de produção acompanhados de pelo menos duas cópias adicionais independentes, eliminando qualquer risco de perda por falha única.
+                    </p>
+                </div>
+
+                
+                <div class="p-7 rounded-2xl bg-[#DCE9F5] border border-[#B7C7D9] relative overflow-hidden">
+                    <span class="asec-font-mono text-5xl font-black text-[#0B2545]/15 absolute top-3 right-4">2</span>
+                    <p class="asec-font-mono text-sm font-bold text-[#0B2545] uppercase">Passo 2</p>
+                    <h3 class="mt-2 text-2xl font-extrabold text-[#0B2545]">2 Mídias Distintas</h3>
+                    <p class="mt-3 text-sm text-[#1E293B] leading-relaxed">
+                        Armazene as cópias em tecnologias e domínios de armazenamento separados, protegendo contra falhas simultâneas de hardware, controladoras ou volumes.
+                    </p>
+                </div>
+
+                
+                <div class="p-7 rounded-2xl bg-[#D8F0EC] border border-[#B7C7D9] relative overflow-hidden">
+                    <span class="asec-font-mono text-5xl font-black text-[#0B2545]/15 absolute top-3 right-4">1</span>
+                    <p class="asec-font-mono text-sm font-bold text-[#0B2545] uppercase">Passo 3</p>
+                    <h3 class="mt-2 text-2xl font-extrabold text-[#0B2545]">1 Cópia Isolada / Offsite</h3>
+                    <p class="mt-3 text-sm text-[#1E293B] leading-relaxed">
+                        Garanta uma cópia fora do perímetro de produção local, isolada contra desastres físicos, incêndios, panes elétricas ou comprometimento da rede principal.
+                    </p>
+                </div>
+
+                
+                <div class="p-7 rounded-2xl bg-[#0B2545] text-white border-2 border-[#00B0F0] relative overflow-hidden shadow-xl">
+                    <span class="asec-font-mono text-4xl font-black text-[#00B0F0]/25 absolute top-3 right-4">WORM</span>
+                    <p class="asec-font-mono text-sm font-bold text-[#00B0F0] uppercase">Diferencial Asec</p>
+                    <h3 class="mt-2 text-2xl font-extrabold text-white">100% Imutável</h3>
+                    <p class="mt-3 text-sm text-[#A8BED6] leading-relaxed">
+                        A evolução indispensável: sua cópia de segurança recebe trava de <strong class="text-white">imutabilidade</strong>, atuando como a <strong class="text-[#00B0F0]">última linha de defesa</strong> intransponível contra extorsão.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="asec-callout mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div>
+                    <h4 class="text-lg font-extrabold text-[#0B2545]">
+                        Escalabilidade Modular para Todos os Portes de Operação
+                    </h4>
+                    <p class="mt-1 text-sm text-[#1E293B]">
+                        Projetamos arquiteturas sob medida em degraus claros de evolução — desde operações enxutas em appliance dedicado até clusters de alta escala e múltiplos ambientes isolados.
+                    </p>
+                </div>
+                <a href="/contato/" class="shrink-0 px-6 py-3 rounded-lg asec-btn-navy text-sm">
+                    Dimensionar Meu Ambiente &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="imutabilidade" class="py-20 asec-dark-section border-t-4 border-[#00B0F0]">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-12 items-center">
+                <div class="lg:col-span-6">
+                    <p class="asec-font-mono text-xs font-bold uppercase tracking-widest text-[#00B0F0]">Defense in Depth</p>
+                    <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl leading-tight">
+                        Por que a Imutabilidade é Inegociável na Proteção de Dados?
+                    </h2>
+                    <p class="mt-4 text-base text-[#A8BED6] leading-relaxed">
+                        Segurança corporativa eficaz não depende de uma única barreira. A Asec implementa <strong class="text-white">Defesa em Profundidade</strong>: múltiplas camadas independentes onde cada controle protege o próximo, culminando na <strong class="text-[#00B0F0]">imutabilidade estrita</strong> dos seus dados.
+                    </p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="p-4 rounded-xl bg-white/5 border border-[#00B0F0]/25">
+                            <h3 class="text-base font-bold text-[#00B0F0]">1. Zero Confiança Implícita (Zero Trust)</h3>
+                            <p class="mt-1 text-sm text-[#CBD5E1]">Nenhum dispositivo ou usuário possui acesso amplo por padrão. O tráfego de backup ocorre exclusivamente por canais criptografados e isolados.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-[#00B0F0]/25">
+                            <h3 class="text-base font-bold text-[#00B0F0]">2. Confidencialidade Ponta a Ponta</h3>
+                            <p class="mt-1 text-sm text-[#CBD5E1]">Os dados são protegidos com criptografia forte na origem antes da transmissão, garantindo sigilo absoluto em trânsito e em repouso.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-[#00B0F0]/25">
+                            <h3 class="text-base font-bold text-[#00B0F0]">3. Retenção Imutável Auditável</h3>
+                            <p class="mt-1 text-sm text-[#CBD5E1]">Políticas de retenção bloqueadas em nível de objeto: nem mesmo o comprometimento da conta administrativa permite apagar ou reduzir a validade dos backups.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="lg:col-span-6">
+                    <div class="p-8 rounded-2xl bg-[#0B2545] border border-[#00B0F0]/40 shadow-2xl">
+                        <span class="asec-font-mono text-xs font-bold uppercase tracking-wider text-[#00B0F0]">Transparência &amp; Auditabilidade</span>
+                        <h3 class="mt-2 text-2xl font-extrabold text-white">
+                            Segurança Comprovada na Prática, Não Apenas no Papel
+                        </h3>
+                        <p class="mt-3 text-sm text-[#A8BED6] leading-relaxed">
+                            Na Asec, cada projeto de proteção de dados e infraestrutura passa por validações rigorosas e testes reais de resiliência antes da entrega operacional:
+                        </p>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-[#051428]/80 border border-white/10">
+                                <span class="text-[#00B0F0] font-bold text-lg">✅</span>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Simulação Real de Resiliência contra Ransomware</p>
+                                    <p class="text-xs text-[#A8BED6] mt-0.5">Testamos tentativas reais de exclusão e sobrescrita para comprovar que seus dados permanecem invioláveis.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-[#051428]/80 border border-white/10">
+                                <span class="text-[#00B0F0] font-bold text-lg">✅</span>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Auditoria de Superfície Externa</p>
+                                    <p class="text-xs text-[#A8BED6] mt-0.5">Varredura externa comprovando zero portas de gerência ou armazenamento expostas na Internet pública.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-[#051428]/80 border border-white/10">
+                                <span class="text-[#00B0F0] font-bold text-lg">✅</span>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Teste Prático de Restauração Point-in-Time</p>
+                                    <p class="text-xs text-[#A8BED6] mt-0.5">Um backup só existe quando sua restauração é testada, documentada e validada com sucesso.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-[#051428]/80 border border-white/10">
+                                <span class="text-[#00B0F0] font-bold text-lg">✅</span>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Monitoramento Contínuo e Runbooks Operacionais</p>
+                                    <p class="text-xs text-[#A8BED6] mt-0.5">Visibilidade ativa da saúde dos repositórios e procedimentos claros de resposta a incidentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-20 asec-zebra-section">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="asec-font-mono text-xs font-bold uppercase tracking-widest text-[#0070C0]">Base de Conhecimento</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-[#0B2545] sm:text-4xl">
+                    Insights &amp; Engenharia de Segurança
+                </h2>
+                
+                <p class="mt-3 text-lg text-[#555F6B]">
+                    Artigos estratégicos sobre proteção de dados, imutabilidade, estratégia 3-2-1 e resiliência cibernética corporativa.
+                </p>
+                
+            </div>
+
+            <div class="grid gap-8 mt-12 md:grid-cols-3">
+                
+                <article class="asec-card flex flex-col justify-between p-7 bg-white">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-font-mono text-xs font-semibold px-3 py-1 rounded-full bg-[#EAF3FB] text-[#0070C0] border border-[#B7C7D9]">
+                                Zero Trust
+                            </span>
+                            <span class="text-xs text-[#555F6B] asec-font-mono">1 min de leitura</span>
+                        </div>
+                        <a href="/posts/03-zero-trust-protecao-dados/" class="block group">
+                            <h3 class="text-xl font-bold text-[#0B2545] group-hover:text-[#0070C0] transition-colors leading-snug">
+                                Zero Trust e Defesa em Profundidade: Blindando a Infraestrutura Corporativa
+                            </h3>
+                            <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                                Por que eliminar portas expostas na Internet e adotar isolamento em camadas é essencial para proteger servidores e repositórios de dados.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="pt-5 mt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div class="flex flex-wrap gap-1.5">
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Zero Trust</span>
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Proteção De Dados</span>
+                            
+                        </div>
+                        <a href="/posts/03-zero-trust-protecao-dados/" class="text-sm font-bold text-[#0070C0] hover:text-[#0B2545] inline-flex items-center gap-1">
+                            Ler mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="asec-card flex flex-col justify-between p-7 bg-white">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-font-mono text-xs font-semibold px-3 py-1 rounded-full bg-[#EAF3FB] text-[#0070C0] border border-[#B7C7D9]">
+                                Estratégia 3-2-1
+                            </span>
+                            <span class="text-xs text-[#555F6B] asec-font-mono">1 min de leitura</span>
+                        </div>
+                        <a href="/posts/02-estrategia-backup-3-2-1/" class="block group">
+                            <h3 class="text-xl font-bold text-[#0B2545] group-hover:text-[#0070C0] transition-colors leading-snug">
+                                Estratégia 3-2-1 na Era do Ransomware: Evoluindo a Proteção de Dados
+                            </h3>
+                            <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                                Como aplicar a clássica regra 3-2-1 combinada à imutabilidade e ao isolamento de rede para eliminar pontos únicos de falha na sua operação.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="pt-5 mt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div class="flex flex-wrap gap-1.5">
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Estratégia 3-2-1</span>
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Imutabilidade</span>
+                            
+                        </div>
+                        <a href="/posts/02-estrategia-backup-3-2-1/" class="text-sm font-bold text-[#0070C0] hover:text-[#0B2545] inline-flex items-center gap-1">
+                            Ler mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="asec-card flex flex-col justify-between p-7 bg-white">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-font-mono text-xs font-semibold px-3 py-1 rounded-full bg-[#EAF3FB] text-[#0070C0] border border-[#B7C7D9]">
+                                Última Linha de Defesa
+                            </span>
+                            <span class="text-xs text-[#555F6B] asec-font-mono">1 min de leitura</span>
+                        </div>
+                        <a href="/posts/01-ultima-linha-de-defesa/" class="block group">
+                            <h3 class="text-xl font-bold text-[#0B2545] group-hover:text-[#0070C0] transition-colors leading-snug">
+                                Backup Imutável: A Última Linha de Defesa Contra o Ransomware Moderno
+                            </h3>
+                            <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                                Entenda por que backups convencionais são destruídos nos primeiros minutos de um incidente cibernético e como a imutabilidade WORM protege a continuidade do negócio.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="pt-5 mt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div class="flex flex-wrap gap-1.5">
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Imutabilidade</span>
+                            
+                            <span class="text-[11px] asec-font-mono px-2 py-0.5 rounded bg-[#F3F7FB] text-[#555F6B]">#Proteção De Dados</span>
+                            
+                        </div>
+                        <a href="/posts/01-ultima-linha-de-defesa/" class="text-sm font-bold text-[#0070C0] hover:text-[#0B2545] inline-flex items-center gap-1">
+                            Ler mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="asec-hero-bg rounded-3xl p-8 sm:p-14 lg:p-16 border-2 border-[#00B0F0]/50 shadow-2xl">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="asec-pill mb-4">🛡️ DIAGNÓSTICO TÉCNICO &amp; ARQUITETURA</span>
+                    <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                        Pronto para blindar os dados críticos da sua empresa?
+                    </h2>
+                    
+                    <p class="mt-4 text-lg text-[#CBD5E1]">
+                        Solicite um diagnóstico confidencial de proteção de dados e descubra como implementar uma última linha de defesa 100% imutável.
+                    </p>
+                    
+
+                    <form method="POST" action="https://formspree.io/f/movlrpne" accept-charset="UTF-8" class="mt-8 sm:mx-auto sm:flex sm:max-w-xl gap-3">
+                        <div class="flex-1 min-w-0">
+                            <label for="cta-email" class="sr-only">E-mail corporativo</label>
+                            <input id="cta-email" type="email" name="email" required class="block w-full px-5 py-3.5 text-base text-slate-900 bg-white placeholder-slate-400 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-[#00B0F0]" placeholder="seu.nome@empresa.com.br">
+                        </div>
+                        <div class="mt-3 sm:mt-0">
+                            <button type="submit" class="w-full sm:w-auto px-7 py-3.5 text-base rounded-xl asec-btn-primary">
+                                Solicitar Diagnóstico
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="mt-5 text-xs text-[#A8BED6]">
+                        Ou fale diretamente com nossa equipe: <a href="mailto:contato@asec.com.br" class="text-[#00B0F0] underline asec-font-mono">contato@asec.com.br</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="/js/darkmode.js" defer></script>
+
+<footer class="asec-footer-bg">
+    <div class="max-w-7xl px-4 py-14 mx-auto sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-12 pb-10 border-b border-white/10">
+            
+            <div class="md:col-span-5">
+                <a href="/" class="inline-block mb-4">
+                    <img src="/images/asec-logo-dark-bg.svg" alt="Asec Logo" class="h-12 w-auto" />
+                </a>
+                <p class="text-sm text-[#A8BED6] max-w-md leading-relaxed">
+                    Arquitetura de Segurança da Informação, Proteção de Dados e Infraestrutura Resiliente. Projetamos a <strong class="text-white">última linha de defesa</strong> da sua empresa com <strong class="text-[#00B0F0]">imutabilidade estrita</strong>, <strong class="text-white">estratégia 3-2-1</strong> e redes <strong class="text-white">Zero Trust</strong>.
+                </p>
+            </div>
+
+            
+            <div class="md:col-span-3">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-[#00B0F0] mb-4">Navegação</h3>
+                <ul class="space-y-2.5 text-sm">
+                    
+                    <li>
+                        <a href="/" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Início</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/#solucoes" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Soluções</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/#estrategia-321" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Estratégia 3-2-1</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sobre/" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Sobre a Asec</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/contato/" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Contato</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            
+            <div class="md:col-span-4">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-[#00B0F0] mb-4">Canais Oficiais</h3>
+                <ul class="space-y-3 text-sm text-[#A8BED6]">
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">🌐</span>
+                        <span>Website: <a href="https://www.asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">www.asec.com.br</a></span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">✉️</span>
+                        <span>Comercial &amp; Projetos: <a href="mailto:contato@asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">contato@asec.com.br</a></span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="text-[#00B0F0]">🛡️</span>
+                        <span>Operações &amp; NOC: <a href="mailto:noc@asec.com.br" class="text-white hover:text-[#00B0F0] asec-font-mono text-xs">noc@asec.com.br</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A8BED6]/80 gap-4">
+            <p>&copy; 2026 <strong class="text-white">Asec — Segurança da Informação &amp; Infraestrutura</strong>. Todos os direitos reservados.</p>
+            <p class="asec-font-mono text-[11px] text-[#00B0F0]/90">Última Linha de Defesa • Proteção de Dados • Imutabilidade • Estratégia 3-2-1</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/**
+ * ============================================================================
+ * Asec — Design Tokens & CSS Variables for www.asec.com.br
+ * Reference: ASEC-MKT-2026-001 (Derived from PT ASEC-PTC-2026-0142 Rev. 5.0)
+ * ============================================================================
+ */
+
+:root {
+  /* 1. Brand Core Palette (Dark / Navy Foundation) */
+  --asec-navy-deep: #0B2545;       /* Primary corporate dark blue (headers, titles) */
+  --asec-navy-cover-top: #0A2444;  /* Hero / Cover gradient start */
+  --asec-navy-midnight: #081C36;   /* Hero / Cover gradient middle & Dark section bg */
+  --asec-navy-abyss: #051428;      /* Hero / Cover gradient end & Footer/Terminal bg */
+
+  /* 2. Brand Accents (Cyan & Corporate Tech Blue) */
+  --asec-cyan-primary: #00B0F0;    /* Shield outline, 'sec' wordmark, dark-mode CTAs, dividers */
+  --asec-cyan-hover: #0099D1;      /* Hover state for primary cyan buttons */
+  --asec-blue-tech: #0070C0;       /* Subheadings on light bg, callout borders, links */
+  --asec-blue-hover: #005A9E;      /* Hover state for tech blue buttons */
+
+  /* 3. Light Surfaces & Scenario Tints (From PT Tables & Callouts) */
+  --asec-bg-white: #FFFFFF;        /* Primary light section background */
+  --asec-bg-zebra: #F3F7FB;        /* Alternating light section & table even row bg */
+  --asec-surface-ice: #EAF3FB;     /* Callout boxes & Scenario 1 (All-in-One) tint */
+  --asec-surface-scen2: #DCE9F5;   /* Scenario 2 (Cluster 4-Bay) header tint */
+  --asec-surface-scen3: #D8F0EC;   /* Scenario 3 (Cluster 6-Bay 10GbE) scale tint */
+  --asec-surface-amber: #FDF3E6;   /* TCO / Software R$ 0,00 / Option B highlight tint */
+
+  /* 4. Typography & Neutral Tokens */
+  --asec-text-dark: #0B2545;       /* Headings on light backgrounds */
+  --asec-text-body: #1E293B;       /* Primary body text on light backgrounds */
+  --asec-text-muted: #555F6B;      /* Subtitles, captions, headers/footers (#555F6B) */
+  --asec-text-on-dark: #FFFFFF;    /* Primary headings/text on dark backgrounds */
+  --asec-text-ice-muted: #A8BED6;  /* Tagline & muted body text on dark backgrounds */
+  --asec-border-steel: #B7C7D9;    /* Table borders & subtle card dividers (#B7C7D9) */
+  --asec-border-light: #D0D0D0;    /* Secondary neutral border */
+
+  /* 5. Gradients & Patterns */
+  --asec-gradient-hero: linear-gradient(160deg, #0A2444 0%, #081C36 55%, #051428 100%);
+  --asec-tech-lines-pattern: repeating-linear-gradient(
+    -62deg,
+    transparent,
+    transparent 18px,
+    rgba(0, 176, 240, 0.11) 18px,
+    rgba(0, 176, 240, 0.11) 20px
+  );
+
+  /* 6. Font Families */
+  --asec-font-sans: 'Inter', 'Plus Jakarta Sans', 'Segoe UI', Calibri, -apple-system, sans-serif;
+  --asec-font-mono: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+
+  /* 7. Elevation & Radii */
+  --asec-radius-sm: 6px;
+  --asec-radius-md: 10px;
+  --asec-radius-lg: 16px;
+  --asec-shadow-card: 0 10px 30px -5px rgba(11, 37, 69, 0.08), 0 4px 12px -2px rgba(11, 37, 69, 0.04);
+  --asec-shadow-glow-cyan: 0 0 24px rgba(0, 176, 240, 0.28);
+}
+
+/* Base Utility Classes for www.asec.com.br */
+.asec-hero-bg {
+  background-color: var(--asec-navy-midnight);
+  background-image: var(--asec-tech-lines-pattern), var(--asec-gradient-hero);
+  color: var(--asec-text-on-dark);
+}
+
+.asec-divider-cyan {
+  height: 3px;
+  width: 100%;
+  background-color: var(--asec-cyan-primary);
+  border: none;
+}
+
+.asec-callout-box {
+  background-color: var(--asec-surface-ice);
+  border: 1.5px solid var(--asec-blue-tech);
+  border-radius: var(--asec-radius-md);
+  padding: 1.25rem 1.5rem;
+  color: var(--asec-text-dark);
+}
+
+.asec-code-badge {
+  font-family: var(--asec-font-mono);
+  font-size: 0.875em;
+  background-color: rgba(0, 176, 240, 0.12);
+  color: var(--asec-cyan-primary);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 176, 240, 0.25);
+}

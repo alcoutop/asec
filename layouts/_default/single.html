@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="bg-white">
+  <header class="asec-hero-bg py-16 lg:py-24 border-b-4 border-[#00B0F0]">
+    <div class="max-w-4xl px-4 mx-auto text-center sm:px-6 lg:px-8">
+      {{ with .Params.subtitle }}
+      <p class="asec-font-mono text-xs uppercase tracking-widest text-[#00B0F0] mb-3">{{ . }}</p>
+      {{ else }}
+      <p class="asec-font-mono text-xs uppercase tracking-widest text-[#00B0F0] mb-3">Asec — Segurança da Informação &amp; Infraestrutura</p>
+      {{ end }}
+      <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
+        {{ .Title }}
+      </h1>
+      {{ with .Params.summary }}
+      <p class="max-w-2xl mx-auto mt-4 text-lg text-[#A8BED6]">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="max-w-4xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+    <div class="prose prose-lg max-w-none prose-headings:text-[#0B2545] prose-a:text-[#0070C0] prose-strong:text-[#0B2545]">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}
