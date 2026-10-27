@@ -1,7 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 128" width="120" height="128" fill="none">
-  <path d="M60 10 L106 25 L106 64 C106 91 85 110 60 122 C35 110 14 91 14 64 L14 25 Z"
-        fill="#0B2545" stroke="#00B0F0" stroke-width="8" stroke-linejoin="round"/>
-  <text x="60" y="80" text-anchor="middle" fill="#FFFFFF"
-        font-family="Segoe UI, Calibri, Inter, Arial, sans-serif"
-        font-weight="800" font-size="48">A</text>
+  <defs>
+    <filter id="shieldGlowIcon" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00B0F0" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <path d="M60 8 L108 24 L108 65 C108 93 86 112 60 124 C34 112 12 93 12 65 L12 24 Z"
+        fill="#081C36" stroke="#00B0F0" stroke-width="7.5" stroke-linejoin="round" filter="url(#shieldGlowIcon)"/>
+  <text x="60" y="78" text-anchor="middle"
+        font-family="Inter, Segoe UI, Calibri, sans-serif"
+        font-weight="900" font-size="42" letter-spacing="-1">
+    <tspan fill="#FFFFFF">A</tspan><tspan fill="#00B0F0">C</tspan>
+  </text>
 </svg>

@@ -1,22 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="560" height="140" fill="none">
-  <!-- Shield Icon for Light Backgrounds -->
-  <g transform="translate(12, 12)">
-    <path d="M52 6 L96 20 L96 58 C96 84 76 102 52 114 C28 102 8 84 8 58 L8 20 Z"
-          fill="#0B2545" stroke="#00B0F0" stroke-width="7.5" stroke-linejoin="round"/>
-    <text x="52" y="73" text-anchor="middle" fill="#FFFFFF"
-          font-family="Segoe UI, Calibri, Inter, Arial, sans-serif"
-          font-weight="800" font-size="44">A</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 144" width="660" height="144" fill="none">
+  <!-- AC Shield Icon Light Mode -->
+  <g transform="translate(10, 10)">
+    <path d="M56 6 L104 22 L104 64 C104 92 82 112 56 124 C30 112 8 92 8 64 L8 22 Z"
+          fill="#0B2545" stroke="#00B0F0" stroke-width="8" stroke-linejoin="round"/>
+    <text x="56" y="78" text-anchor="middle"
+          font-family="Inter, Segoe UI, Calibri, sans-serif"
+          font-weight="900" font-size="44" letter-spacing="-1">
+      <tspan fill="#FFFFFF">A</tspan><tspan fill="#00B0F0">C</tspan>
+    </text>
   </g>
 
   <!-- Wordmark: 'A' (#0B2545 Bold) + 'sec' (#0070C0 SemiBold) -->
-  <text x="132" y="88" font-family="Segoe UI, Calibri, Inter, Arial, sans-serif" font-size="76">
-    <tspan fill="#0B2545" font-weight="800">A</tspan><tspan fill="#0070C0" font-weight="600">sec</tspan>
+  <text x="144" y="90" font-family="Inter, Segoe UI, Calibri, sans-serif" font-size="78">
+    <tspan fill="#0B2545" font-weight="900">A</tspan><tspan fill="#0070C0" font-weight="600">sec</tspan>
   </text>
 
-  <!-- Descriptor / Tagline -->
-  <text x="135" y="118" fill="#555F6B"
-        font-family="Segoe UI, Calibri, Inter, Arial, sans-serif"
-        font-weight="600" font-size="15.5" letter-spacing="1.4">
+  <!-- Tagline / Descriptor -->
+  <text x="146" y="122" fill="#555F6B"
+        font-family="Inter, Segoe UI, Calibri, sans-serif"
+        font-weight="600" font-size="15" letter-spacing="1.2">
     SEGURANÇA DA INFORMAÇÃO &amp; INFRAESTRUTURA
   </text>
 </svg>
