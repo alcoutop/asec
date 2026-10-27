@@ -35,8 +35,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Alpine cloak */
+[x-cloak] {
+  display: none !important;
+}
+
 /* Monospace font */
-.asec-mono {
+.asec-mono,
+.asec-font-mono {
   font-family: 'JetBrains Mono', Consolas, monospace;
 }
 

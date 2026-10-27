@@ -31,4 +31,4 @@ A **Asec — Segurança da Informação & Infraestrutura** nasceu para eliminar 
 
 ## Pronto para Fortalecer Sua Última Linha de Defesa?
 
-Entre em contato com a equipe de engenharia da **Asec** pelo e-mail [`contato@asec.com.br`](mailto:contato@asec.com.br) ou acesse nossa [página de Contato](/contato/) para agendar um diagnóstico de proteção de dados.
+Entre em contato com a equipe de engenharia da **Asec** pelo e-mail [contato@asec.com.br](mailto:contato@asec.com.br) ou acesse nossa [página de Contato](/contato/) para agendar um diagnóstico de proteção de dados.

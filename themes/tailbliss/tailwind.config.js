@@ -1,14 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const path = require('path')
 
-// tailwind.config.js for Asec
 module.exports = {
   content: [
-    './layouts/**/*.html',
-    './content/**/*.md',
-    '../../layouts/**/*.html',
-    '../../content/**/*.md',
-    '../../assets/**/*.js',
-    '../../static/**/*.html'
+    path.join(__dirname, '../../layouts/**/*.html'),
+    path.join(__dirname, '../../content/**/*.md'),
+    path.join(__dirname, './layouts/**/*.html'),
+    path.join(__dirname, './content/**/*.md'),
   ],
   darkMode: 'class',
   theme: {
@@ -54,28 +52,6 @@ module.exports = {
         'extra-loose': '2.5',
         '12': '3rem',
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            '--tw-prose-body': '#1E293B',
-            '--tw-prose-headings': '#0B2545',
-            '--tw-prose-lead': '#555F6B',
-            '--tw-prose-links': '#0070C0',
-            '--tw-prose-bold': '#0B2545',
-            '--tw-prose-counters': '#555F6B',
-            '--tw-prose-bullets': '#00B0F0',
-            '--tw-prose-hr': '#B7C7D9',
-            '--tw-prose-quotes': '#0B2545',
-            '--tw-prose-quote-borders': '#00B0F0',
-            '--tw-prose-captions': '#555F6B',
-            '--tw-prose-code': '#0070C0',
-            '--tw-prose-pre-code': '#7CE0FF',
-            '--tw-prose-pre-bg': '#051428',
-            '--tw-prose-th-borders': '#B7C7D9',
-            '--tw-prose-td-borders': '#E2E8F0',
-          },
-        },
-      }),
     },
   },
   variants: {
