@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 128" width="120" height="128" fill="none">
-  <path d="M60 10 L106 25 L106 64 C106 91 85 110 60 122 C35 110 14 91 14 64 L14 25 Z"
-        fill="#0B2545" stroke="#00B0F0" stroke-width="8" stroke-linejoin="round"/>
-  <text x="60" y="80" text-anchor="middle" fill="#FFFFFF"
-        font-family="Segoe UI, Calibri, Inter, Arial, sans-serif"
-        font-weight="800" font-size="48">A</text>
-</svg>
