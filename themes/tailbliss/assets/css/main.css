@@ -107,6 +107,16 @@ body {
   box-shadow: 0 0 32px rgba(0, 176, 240, 0.55);
 }
 
+.asec-nav-cta {
+  padding: 0.625rem 1.15rem !important;
+}
+
+@media (min-width: 1280px) {
+  .asec-nav-cta {
+    padding: 0.7rem 1.4rem !important;
+  }
+}
+
 .asec-btn-outline {
   display: inline-flex;
   align-items: center;
@@ -193,10 +203,10 @@ body {
 
 /* Header logo sizing lock */
 .asec-header-logo {
-  height: 48px;
-  max-height: 48px;
+  height: 54px;
+  max-height: 54px;
   width: auto;
-  max-width: 220px;
+  max-width: 180px;
   display: block;
   object-fit: contain;
   transition: transform 0.2s ease;
@@ -204,17 +214,25 @@ body {
 
 @media (min-width: 640px) {
   .asec-header-logo {
-    height: 54px;
-    max-height: 54px;
-    max-width: 260px;
+    height: 64px;
+    max-height: 64px;
+    max-width: 210px;
   }
 }
 
 @media (min-width: 1024px) {
   .asec-header-logo {
-    height: 68px;
-    max-height: 68px;
-    max-width: 330px;
+    height: 70px;
+    max-height: 70px;
+    max-width: 230px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .asec-header-logo {
+    height: 78px;
+    max-height: 78px;
+    max-width: 260px;
   }
 }
 

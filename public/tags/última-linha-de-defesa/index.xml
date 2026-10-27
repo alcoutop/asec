@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Última Linha De Defesa on Asec</title><link>https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/</link><description>Recent content in Última Linha De Defesa on Asec</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Tue, 20 Oct 2026 09:00:00 -0300</lastBuildDate><atom:link href="https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Imutável: A Última Linha de Defesa Contra o Ransomware Moderno</title><link>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</link><pubDate>Tue, 20 Oct 2026 09:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</guid><description>Entenda por que backups convencionais são destruídos nos primeiros minutos de um incidente cibernético e como a imutabilidade WORM protege a continuidade do negócio.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Última Linha De Defesa on Asec</title>
+    <link>https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/</link>
+    <description>Recent content in Última Linha De Defesa on Asec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 20 Oct 2026 09:00:00 -0300</lastBuildDate>
+    <atom:link href="https://d1qb4nssmea954.cloudfront.net/tags/%C3%BAltima-linha-de-defesa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backup Imutável: A Última Linha de Defesa Contra o Ransomware Moderno</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</link>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</guid>
+      <description>Entenda por que backups convencionais são destruídos nos primeiros minutos de um incidente cibernético e como a imutabilidade WORM protege a continuidade do negócio.</description>
+    </item>
+  </channel>
+</rss>

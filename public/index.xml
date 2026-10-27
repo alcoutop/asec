@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asec</title><link>https://d1qb4nssmea954.cloudfront.net/</link><description>Recent content on Asec</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Mon, 26 Oct 2026 10:00:00 -0300</lastBuildDate><atom:link href="https://d1qb4nssmea954.cloudfront.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Fale com a Asec</title><link>https://d1qb4nssmea954.cloudfront.net/contato/</link><pubDate>Mon, 26 Oct 2026 10:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/contato/</guid><description>Agende uma conversa com nossa engenharia para dimensionar a proteção de dados, estratégia 3-2-1 e backup imutável da sua operação.</description></item><item><title>Sobre a Asec</title><link>https://d1qb4nssmea954.cloudfront.net/sobre/</link><pubDate>Mon, 26 Oct 2026 10:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/sobre/</guid><description>Engenharia de segurança em camadas, proteção de dados imutável e infraestrutura resiliente para garantir a continuidade operacional da sua empresa.</description></item><item><title>Zero Trust e Defesa em Profundidade: Blindando a Infraestrutura Corporativa</title><link>https://d1qb4nssmea954.cloudfront.net/posts/03-zero-trust-protecao-dados/</link><pubDate>Sun, 25 Oct 2026 09:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/posts/03-zero-trust-protecao-dados/</guid><description>Por que eliminar portas expostas na Internet e adotar isolamento em camadas é essencial para proteger servidores e repositórios de dados.</description></item><item><title>Estratégia 3-2-1 na Era do Ransomware: Evoluindo a Proteção de Dados</title><link>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</link><pubDate>Thu, 22 Oct 2026 09:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</guid><description>Como aplicar a clássica regra 3-2-1 combinada à imutabilidade e ao isolamento de rede para eliminar pontos únicos de falha na sua operação.</description></item><item><title>Backup Imutável: A Última Linha de Defesa Contra o Ransomware Moderno</title><link>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</link><pubDate>Tue, 20 Oct 2026 09:00:00 -0300</pubDate><guid>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</guid><description>Entenda por que backups convencionais são destruídos nos primeiros minutos de um incidente cibernético e como a imutabilidade WORM protege a continuidade do negócio.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asec</title>
+    <link>https://d1qb4nssmea954.cloudfront.net/</link>
+    <description>Recent content on Asec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 26 Oct 2026 10:00:00 -0300</lastBuildDate>
+    <atom:link href="https://d1qb4nssmea954.cloudfront.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fale com a Asec</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/contato/</link>
+      <pubDate>Mon, 26 Oct 2026 10:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/contato/</guid>
+      <description>Agende uma conversa com nossa engenharia para dimensionar a proteção de dados, estratégia 3-2-1 e backup imutável da sua operação.</description>
+    </item>
+    <item>
+      <title>Sobre a Asec</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/sobre/</link>
+      <pubDate>Mon, 26 Oct 2026 10:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/sobre/</guid>
+      <description>Engenharia de segurança em camadas, proteção de dados imutável e infraestrutura resiliente para garantir a continuidade operacional da sua empresa.</description>
+    </item>
+    <item>
+      <title>Zero Trust e Defesa em Profundidade: Blindando a Infraestrutura Corporativa</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/posts/03-zero-trust-protecao-dados/</link>
+      <pubDate>Sun, 25 Oct 2026 09:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/posts/03-zero-trust-protecao-dados/</guid>
+      <description>Por que eliminar portas expostas na Internet e adotar isolamento em camadas é essencial para proteger servidores e repositórios de dados.</description>
+    </item>
+    <item>
+      <title>Estratégia 3-2-1 na Era do Ransomware: Evoluindo a Proteção de Dados</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</link>
+      <pubDate>Thu, 22 Oct 2026 09:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/posts/02-estrategia-backup-3-2-1/</guid>
+      <description>Como aplicar a clássica regra 3-2-1 combinada à imutabilidade e ao isolamento de rede para eliminar pontos únicos de falha na sua operação.</description>
+    </item>
+    <item>
+      <title>Backup Imutável: A Última Linha de Defesa Contra o Ransomware Moderno</title>
+      <link>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</link>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 -0300</pubDate>
+      <guid>https://d1qb4nssmea954.cloudfront.net/posts/01-ultima-linha-de-defesa/</guid>
+      <description>Entenda por que backups convencionais são destruídos nos primeiros minutos de um incidente cibernético e como a imutabilidade WORM protege a continuidade do negócio.</description>
+    </item>
+  </channel>
+</rss>
