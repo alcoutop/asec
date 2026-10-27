@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 148" width="385" height="148" fill="none">
-  <!-- Prominent AC Cyber Shield Icon -->
+  <!-- Prominent A Cyber Shield Icon -->
   <g>
     <path d="M66 10 L120 28 L120 74 C120 107 95 128 66 140 C37 128 12 107 12 74 L12 28 Z"
           fill="#0B2545" stroke="#00B0F0" stroke-width="8.5" stroke-linejoin="round"/>
     <path d="M66 20 L110 35 L110 73 C110 100 90 117 66 128 C42 117 22 100 22 73 L22 35 Z"
           fill="none" stroke="#00B0F0" stroke-width="1.5" stroke-opacity="0.4" stroke-linejoin="round"/>
-    <text x="66" y="92" text-anchor="middle"
+    <!-- Bold 'A' inside shield -->
+    <text x="66" y="93" text-anchor="middle"
           font-family="Inter, Segoe UI, Calibri, sans-serif"
-          font-weight="900" font-size="52" letter-spacing="-1.5">
-      <tspan fill="#FFFFFF">A</tspan><tspan fill="#00B0F0">C</tspan>
-    </text>
+          font-weight="900" font-size="58" fill="#FFFFFF">A</text>
   </g>
 
   <!-- Wordmark -->

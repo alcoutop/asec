@@ -18,9 +18,8 @@
         fill="url(#shieldFillIcon)" stroke="url(#cyanEdgeIcon)" stroke-width="8.5" stroke-linejoin="round" filter="url(#shieldGlowIcon)"/>
   <path d="M66 20 L110 35 L110 73 C110 100 90 117 66 128 C42 117 22 100 22 73 L22 35 Z"
         fill="none" stroke="#00B0F0" stroke-width="1.5" stroke-opacity="0.38" stroke-linejoin="round"/>
-  <text x="66" y="92" text-anchor="middle"
+  <!-- Bold 'A' inside shield -->
+  <text x="66" y="93" text-anchor="middle"
         font-family="Inter, Segoe UI, Calibri, sans-serif"
-        font-weight="900" font-size="52" letter-spacing="-1.5">
-    <tspan fill="#FFFFFF">A</tspan><tspan fill="#00B0F0">C</tspan>
-  </text>
+        font-weight="900" font-size="58" fill="#FFFFFF">A</text>
 </svg>

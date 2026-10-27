@@ -14,7 +14,7 @@
     </linearGradient>
   </defs>
 
-  <!-- Prominent AC Cyber Shield Icon -->
+  <!-- Prominent A Cyber Shield Icon -->
   <g>
     <!-- Outer Glowing Shield -->
     <path d="M66 10 L120 28 L120 74 C120 107 95 128 66 140 C37 128 12 107 12 74 L12 28 Z"
@@ -22,12 +22,10 @@
     <!-- Inner Subtle Shield Perimeter -->
     <path d="M66 20 L110 35 L110 73 C110 100 90 117 66 128 C42 117 22 100 22 73 L22 35 Z"
           fill="none" stroke="#00B0F0" stroke-width="1.5" stroke-opacity="0.38" stroke-linejoin="round"/>
-    <!-- Bold AC Monogram -->
-    <text x="66" y="92" text-anchor="middle"
+    <!-- Bold 'A' inside shield -->
+    <text x="66" y="93" text-anchor="middle"
           font-family="Inter, Segoe UI, Calibri, sans-serif"
-          font-weight="900" font-size="52" letter-spacing="-1.5">
-      <tspan fill="#FFFFFF">A</tspan><tspan fill="#00B0F0">C</tspan>
-    </text>
+          font-weight="900" font-size="58" fill="#FFFFFF">A</text>
   </g>
 
   <!-- Wordmark: 'A' (#FFFFFF Bold) + 'sec' (#00B0F0 SemiBold) -->
