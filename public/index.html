@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden">
 
 <head>
 	<meta name="generator" content="Hugo 0.123.7">
@@ -40,9 +40,9 @@
 
 </head>
 
-<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428]">
+<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428] overflow-x-hidden w-full relative">
     <header class="sticky top-0 z-50 w-full text-white" style="background-color: rgba(8, 28, 54, 0.96); backdrop-filter: blur(14px); border-bottom: 2px solid rgba(0, 176, 240, 0.35); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 176, 240, 0.1);">
-    <div x-data="{ open: false }" class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+    <div x-data="{ open: false }" class="max-w-[1440px] px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20 sm:h-24 lg:h-28 gap-3">
             
             <a href="/" class="flex items-center flex-shrink-0 focus:outline-none transition-transform hover:scale-[1.02]" aria-label="Asec — Segurança da Informação & Infraestrutura">
@@ -58,28 +58,31 @@
             </button>
 
             
-            <nav class="hidden lg:flex lg:items-center lg:gap-0.5 xl:gap-2">
-                <a class="hidden xl:inline-block px-3 py-2 text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/">
+            <nav class="hidden lg:flex lg:items-center lg:gap-1 xl:gap-1.5 2xl:gap-2">
+                <a class="hidden 2xl:inline-block px-2.5 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/">
                     Início
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#problema">
+                <a class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-bold text-[#00B0F0] whitespace-nowrap rounded-lg hover:text-white hover:bg-white/5 transition-colors" href="/servicos/">
+                    Serviços &amp; Vendas
+                </a>
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#problema">
                     O Problema
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#solucoes">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#solucoes">
                     Soluções
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#estrategia-321">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#estrategia-321">
                     Estratégia 3-2-1
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#defesa">
+                <a class="hidden xl:inline-block px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/#defesa">
                     Defesa em Camadas
                 </a>
 
                 
                 <div @click.outside="openDrop = false" class="relative" x-data="{ openDrop: false }">
-                    <button @click="openDrop = !openDrop" class="flex items-center px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 focus:outline-none transition-colors">
+                    <button @click="openDrop = !openDrop" class="flex items-center px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 focus:outline-none transition-colors">
                         <span>Artigos</span>
-                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openDrop, 'rotate-0': !openDrop}" class="w-4 h-4 ml-1 transition-transform duration-200">
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openDrop, 'rotate-0': !openDrop}" class="w-3.5 h-3.5 ml-1 transition-transform duration-200">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
@@ -96,11 +99,11 @@
                     </div>
                 </div>
 
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/sobre/">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="/sobre/">
                     Sobre
                 </a>
 
-                <a href="/contato/" class="ml-1.5 xl:ml-3 text-xs xl:text-sm font-bold whitespace-nowrap rounded-xl asec-btn-primary asec-nav-cta shadow-lg shadow-[#00B0F0]/25 flex-shrink-0">
+                <a href="/contato/" class="ml-2 xl:ml-3 px-3.5 xl:px-4 py-2 text-xs xl:text-sm font-bold whitespace-nowrap rounded-xl asec-btn-primary asec-nav-cta shadow-lg shadow-[#00B0F0]/25 flex-shrink-0">
                     Solicitar Diagnóstico
                 </a>
             </nav>
@@ -110,6 +113,9 @@
         <div x-show="open" x-cloak x-transition class="lg:hidden pb-5 pt-2 border-t border-[#00B0F0]/20 space-y-1">
             <a @click="open = false" class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/">
                 Início
+            </a>
+            <a @click="open = false" class="block px-3 py-2 text-base font-bold text-[#00B0F0] rounded-lg hover:bg-white/5" href="/servicos/">
+                Serviços &amp; Vendas
             </a>
             <a @click="open = false" class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="/#problema">
                 O Problema
@@ -437,6 +443,36 @@
                     </p>
                     <div class="mt-6 pt-5 border-t border-slate-100 flex items-center text-sm font-bold text-[#0070C0]">
                         <span>Alta performance sem renovações abusivas</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="mt-12 p-8 sm:p-10 rounded-3xl bg-[#0B2545] text-white border-2 border-[#00B0F0]/50 shadow-2xl relative overflow-hidden">
+                <div class="grid gap-8 lg:grid-cols-12 items-center">
+                    <div class="lg:col-span-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00B0F0]/20 border border-[#00B0F0]/40 text-[#00B0F0] text-xs font-bold asec-mono uppercase tracking-wider mb-3">
+                            ⭐ Portfólio de Soluções Turnkey
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                            Conheça os 3 Tiers de Appliance Dedicado Homologado Asec
+                        </h3>
+                        <p class="mt-3 text-sm sm:text-base text-[#A8BED6] leading-relaxed max-w-2xl">
+                            Soluções completas com hardware corporativo dedicado, Proxmox VE, NGFW OPNsense, MinIO S3 COMPLIANCE, ZTNA WireGuard e R$ 0,00 de licenças anuais de software.
+                        </p>
+                        <div class="flex flex-wrap gap-3 mt-5 text-xs asec-mono">
+                            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Tier 1 • Standard (até 20 TB)</span>
+                            <span class="px-2.5 py-1 rounded bg-[#00B0F0]/20 text-[#00B0F0] font-bold border border-[#00B0F0]/40">Tier 2 • Enterprise ECC (até 40 TB)</span>
+                            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Tier 3 • High-Scale 10G (40 a 140+ TB)</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+                        <a href="/servicos/" class="asec-btn-primary text-center text-sm font-bold shadow-lg">
+                            Ver Portfólio &amp; Preços Turnkey &rarr;
+                        </a>
+                        <a href="/servicos/#planos" class="asec-btn-outline text-center text-sm font-bold">
+                            Planos de Gestão BaaS &amp; DR &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -801,6 +837,10 @@
                     
                     <li>
                         <a href="/" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Início</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/servicos/" class="text-[#A8BED6] hover:text-[#00B0F0] transition-colors">Serviços &amp; Vendas</a>
                     </li>
                     
                     <li>

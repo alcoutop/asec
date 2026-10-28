@@ -58,6 +58,10 @@ menu:
       name: Início
       url: /
       weight: 10
+    - identifier: servicos
+      name: Serviços & Vendas
+      url: /servicos/
+      weight: 15
     - identifier: solucoes
       name: Soluções
       url: /#solucoes
@@ -102,6 +106,10 @@ menu:
       name: Início
       url: /
       weight: 10
+    - identifier: servicos
+      name: Serviços & Vendas
+      url: /servicos/
+      weight: 15
     - identifier: solucoes
       name: Soluções
       url: /#solucoes

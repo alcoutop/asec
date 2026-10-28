@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50 w-full text-white" style="background-color: rgba(8, 28, 54, 0.96); backdrop-filter: blur(14px); border-bottom: 2px solid rgba(0, 176, 240, 0.35); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 176, 240, 0.1);">
-    <div x-data="{ open: false }" class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+    <div x-data="{ open: false }" class="max-w-[1440px] px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20 sm:h-24 lg:h-28 gap-3">
             <!-- Official Asec Logo with prominent AC Shield -->
             <a href="{{ "/" | relURL }}" class="flex items-center flex-shrink-0 focus:outline-none transition-transform hover:scale-[1.02]" aria-label="Asec — Segurança da Informação & Infraestrutura">
@@ -15,28 +15,31 @@
             </button>
 
             <!-- Desktop Navigation Links -->
-            <nav class="hidden lg:flex lg:items-center lg:gap-0.5 xl:gap-2">
-                <a class="hidden xl:inline-block px-3 py-2 text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/" | relURL }}">
+            <nav class="hidden lg:flex lg:items-center lg:gap-1 xl:gap-1.5 2xl:gap-2">
+                <a class="hidden 2xl:inline-block px-2.5 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/" | relURL }}">
                     Início
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#problema" | relURL }}">
+                <a class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-bold text-[#00B0F0] whitespace-nowrap rounded-lg hover:text-white hover:bg-white/5 transition-colors" href="{{ "/servicos/" | relURL }}">
+                    Serviços &amp; Vendas
+                </a>
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#problema" | relURL }}">
                     O Problema
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#solucoes" | relURL }}">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#solucoes" | relURL }}">
                     Soluções
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#estrategia-321" | relURL }}">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#estrategia-321" | relURL }}">
                     Estratégia 3-2-1
                 </a>
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#defesa" | relURL }}">
+                <a class="hidden xl:inline-block px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/#defesa" | relURL }}">
                     Defesa em Camadas
                 </a>
 
                 <!-- Dropdown Artigos -->
                 <div @click.outside="openDrop = false" class="relative" x-data="{ openDrop: false }">
-                    <button @click="openDrop = !openDrop" class="flex items-center px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 focus:outline-none transition-colors">
+                    <button @click="openDrop = !openDrop" class="flex items-center px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 focus:outline-none transition-colors">
                         <span>Artigos</span>
-                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openDrop, 'rotate-0': !openDrop}" class="w-4 h-4 ml-1 transition-transform duration-200">
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openDrop, 'rotate-0': !openDrop}" class="w-3.5 h-3.5 ml-1 transition-transform duration-200">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
@@ -53,11 +56,11 @@
                     </div>
                 </div>
 
-                <a class="px-2 xl:px-3 py-2 text-xs xl:text-[15px] font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/sobre/" | relURL }}">
+                <a class="px-1.5 xl:px-2 py-1.5 text-xs xl:text-sm font-semibold text-gray-200 whitespace-nowrap rounded-lg hover:text-[#00B0F0] hover:bg-white/5 transition-colors" href="{{ "/sobre/" | relURL }}">
                     Sobre
                 </a>
 
-                <a href="{{ "/contato/" | relURL }}" class="ml-1.5 xl:ml-3 text-xs xl:text-sm font-bold whitespace-nowrap rounded-xl asec-btn-primary asec-nav-cta shadow-lg shadow-[#00B0F0]/25 flex-shrink-0">
+                <a href="{{ "/contato/" | relURL }}" class="ml-2 xl:ml-3 px-3.5 xl:px-4 py-2 text-xs xl:text-sm font-bold whitespace-nowrap rounded-xl asec-btn-primary asec-nav-cta shadow-lg shadow-[#00B0F0]/25 flex-shrink-0">
                     Solicitar Diagnóstico
                 </a>
             </nav>
@@ -67,6 +70,9 @@
         <div x-show="open" x-cloak x-transition class="lg:hidden pb-5 pt-2 border-t border-[#00B0F0]/20 space-y-1">
             <a @click="open = false" class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="{{ "/" | relURL }}">
                 Início
+            </a>
+            <a @click="open = false" class="block px-3 py-2 text-base font-bold text-[#00B0F0] rounded-lg hover:bg-white/5" href="{{ "/servicos/" | relURL }}">
+                Serviços &amp; Vendas
             </a>
             <a @click="open = false" class="block px-3 py-2 text-base font-semibold text-gray-200 rounded-lg hover:bg-white/5 hover:text-[#00B0F0]" href="{{ "/#problema" | relURL }}">
                 O Problema

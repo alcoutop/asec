@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang | default "pt-br" }}" class="scroll-smooth">
+<html lang="{{ .Site.Language.Lang | default "pt-br" }}" class="scroll-smooth overflow-x-hidden">
 
 <head>
     {{ partial "head.html" . }}
 </head>
 
-<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428]">
+<body class="asec-body antialiased selection:bg-[#00B0F0] selection:text-[#051428] overflow-x-hidden w-full relative">
     {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer.html" . }}

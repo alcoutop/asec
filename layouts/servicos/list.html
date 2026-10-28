@@ -1,0 +1,1049 @@
+{{ define "main" }}
+<main class="bg-white overflow-x-hidden w-full">
+    <!-- ===================================================================
+         HERO SECTION: SERVIÇOS & SOLUÇÕES DE ENGENHARIA ASEC
+         =================================================================== -->
+    <section class="asec-hero-bg relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 mb-5 rounded-full bg-[#00B0F0]/15 border border-[#00B0F0]/40 max-w-full">
+                    <img src="{{ "/images/asec-icon-shield.svg?v=5" | relURL }}" alt="Escudo Asec" class="w-4 h-4 sm:w-5 sm:h-5 drop-shadow flex-shrink-0" />
+                    <span class="asec-mono text-[10px] sm:text-xs font-semibold tracking-normal sm:tracking-wider uppercase text-[#00B0F0] truncate">
+                        Portfólio de Serviços &amp; Resiliência
+                    </span>
+                </div>
+
+                <h1 class="text-2xl sm:text-4xl xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] sm:leading-[1.15]">
+                    Proteção de Dados, Backup Imutável &amp; Disaster Recovery
+                </h1>
+
+                <p class="mt-5 text-base sm:text-xl text-[#CBD5E1] leading-relaxed max-w-3xl mx-auto">
+                    Blindamos a continuidade operacional da sua empresa com <strong class="text-white">Appliances Dedicados Homologados</strong>, retenção <strong class="text-[#00B0F0]">WORM S3 COMPLIANCE</strong> estrita, malha <strong class="text-white">Zero Trust ZTNA</strong> e <strong class="text-white">R$ 0,00 anuais de licenças de software</strong>.
+                </p>
+
+                <!-- Key Badges -->
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-2.5 mt-8 px-2 max-w-full">
+                    <span class="asec-pill text-[11px] sm:text-xs">🔒 Imutabilidade WORM S3</span>
+                    <span class="asec-pill text-[11px] sm:text-xs">📦 Metodologia 3-2-1-1-0</span>
+                    <span class="asec-pill text-[11px] sm:text-xs">🌐 Zero Portas na WAN</span>
+                    <span class="asec-pill text-[11px] sm:text-xs">⚡ Memória ECC Antifalhas</span>
+                    <span class="asec-pill text-[11px] sm:text-xs">💰 R$ 0,00 em Royalties</span>
+                    <span class="asec-pill text-[11px] sm:text-xs">⏱️ RTO &lt; 1h / RPO 1-4h</span>
+                </div>
+
+                <!-- Navigation CTAs -->
+                <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-8 sm:mt-10 max-w-md sm:max-w-none mx-auto px-4 sm:px-0">
+                    <a href="#appliances" class="asec-btn-primary text-sm sm:text-base text-center">
+                        Conhecer os 3 Tiers de Appliances &darr;
+                    </a>
+                    <a href="#planos" class="asec-btn-outline text-sm sm:text-base text-center">
+                        Planos Gerenciados BaaS &amp; DR &darr;
+                    </a>
+                    <a href="{{ "/contato/" | relURL }}" class="asec-btn-outline text-sm sm:text-base text-center">
+                        Solicitar Diagnóstico Gratuito &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4 Value Pillar Cards in Hero Base -->
+            <div class="grid grid-cols-1 gap-5 mt-16 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="p-6 rounded-2xl bg-[#0B2545]/70 border border-[#00B0F0]/30 backdrop-blur-sm">
+                    <p class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Pilar 01</p>
+                    <p class="mt-1 text-lg font-bold text-white">Imutabilidade WORM</p>
+                    <p class="mt-2 text-xs text-[#A8BED6] leading-relaxed">
+                        MinIO S3 Object Lock em modo COMPLIANCE. Bloqueio absoluto: nem invasor, nem root apagam dados antes do prazo.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-[#0B2545]/70 border border-[#00B0F0]/30 backdrop-blur-sm">
+                    <p class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Pilar 02</p>
+                    <p class="mt-1 text-lg font-bold text-white">Estratégia 3-2-1-1-0</p>
+                    <p class="mt-2 text-xs text-[#A8BED6] leading-relaxed">
+                        3 cópias, 2 mídias distintas, 1 offsite, 1 imutável WORM e 0 erros validados por auditorias contínuas.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-[#0B2545]/70 border border-[#00B0F0]/30 backdrop-blur-sm">
+                    <p class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Pilar 03</p>
+                    <p class="mt-1 text-lg font-bold text-white">Perímetro Zero Trust</p>
+                    <p class="mt-2 text-xs text-[#A8BED6] leading-relaxed">
+                        0 portas abertas na WAN pública. Tráfego encapsulado via malha WireGuard ZTNA isolada com OPNsense e CrowdSec CTI.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-[#0B2545]/70 border border-[#00B0F0]/30 backdrop-blur-sm">
+                    <p class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Pilar 04</p>
+                    <p class="mt-1 text-lg font-bold text-white">Virtualização &amp; DR</p>
+                    <p class="mt-2 text-xs text-[#A8BED6] leading-relaxed">
+                        Proxmox VE corporativo, Switch Virtual L2 e resgate out-of-band em &lt; 30 min mesmo com colapso do hypervisor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="asec-divider-cyan" />
+
+    <!-- ===================================================================
+         SEÇÃO 1: OS 4 PILARES OFICIAIS DE SERVIÇOS EM DETALHES
+         =================================================================== -->
+    <section id="pilares" class="py-20 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                    Arquitetura de Segurança em Camadas
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight">
+                    Os 4 Pilares de Serviços da Engenharia Asec
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Projetamos a proteção de dados para resistir ao pior cenário: o comprometimento das credenciais de administrador da rede.
+                </p>
+            </div>
+
+            <div class="grid gap-8 mt-16 md:grid-cols-2">
+                <!-- Pilar 1 -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-mono text-xs font-bold px-3 py-1 rounded-md bg-[#0B2545] text-[#00B0F0]">PILAR 01</span>
+                            <span class="text-3xl">🔒</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Backup Imutável como Última Linha de Defesa</h3>
+                        <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                            Repositório de armazenamento baseado em tecnologia <strong class="text-[#0B2545]">WORM (Write Once, Read Many)</strong> via protocolo <strong class="text-[#0B2545]">MinIO S3 com Object Lock em modo COMPLIANCE</strong>. Uma vez gravado o snapshot de backup e definida a janela de retenção (30, 60 ou 90 dias), o objeto torna-se inalterável e indelével.
+                        </p>
+                        <ul class="mt-5 space-y-2.5 text-xs text-[#1E293B]">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Nem invasores com privilégio de root conseguem apagar ou sobrescrever os dados</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Bloqueio estrito de redução do período de retenção temporal no nível do storage</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Restauração point-in-time para o segundo anterior ao ataque cibernético</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-[#B7C7D9] text-xs font-bold text-[#0070C0]">
+                        Resultado: Imunidade comprovada contra chantagem e extorsão de ransomware.
+                    </div>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-mono text-xs font-bold px-3 py-1 rounded-md bg-[#0B2545] text-[#00B0F0]">PILAR 02</span>
+                            <span class="text-3xl">📦</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Arquitetura de Resiliência 3-2-1-1-0</h3>
+                        <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                            A evolução contemporânea da regra clássica de proteção. Elimina qualquer ponto único de falha lógica, humana ou estrutural na preservação dos seus ativos digitais mais críticos.
+                        </p>
+                        <div class="mt-4 p-4 rounded-xl bg-white border border-[#B7C7D9]/70 asec-mono text-xs space-y-1 text-[#0B2545]">
+                            <p><strong>3</strong> &rarr; No mínimo 3 cópias dos dados (produção + 2 backups)</p>
+                            <p><strong>2</strong> &rarr; Armazenamento em 2 mídias em tecnologias distintas</p>
+                            <p><strong>1</strong> &rarr; 1 cópia offsite isolada geograficamente fora do domínio</p>
+                            <p><strong>1</strong> &rarr; 1 cópia estritamente imutável (WORM S3 COMPLIANCE)</p>
+                            <p class="text-[#0070C0]"><strong>0</strong> &rarr; 0 erros na recuperação validados por auditorias periódicas</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-[#B7C7D9] text-xs font-bold text-[#0070C0]">
+                        Resultado: Redundância multi-tecnologia sem pontos únicos de colapso.
+                    </div>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-mono text-xs font-bold px-3 py-1 rounded-md bg-[#0B2545] text-[#00B0F0]">PILAR 03</span>
+                            <span class="text-3xl">🛡️</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Perímetro NGFW, Microssegmentação &amp; Zero Trust</h3>
+                        <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                            A segurança moderna parte do princípio do acesso estritamente restrito. Eliminamos qualquer porta aberta na Internet pública (<strong class="text-[#0B2545]">0 portas WAN expostas</strong> / sem port-forwarding). Os agentes comunicam-se exclusivamente por malha privada criptografada WireGuard.
+                        </p>
+                        <ul class="mt-5 space-y-2.5 text-xs text-[#1E293B]">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Zero Trust Network Access (Tailscale WireGuard Mesh) isolado por tag</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Firewall corporativo de próxima geração OPNsense Bare-Metal (Packet Filter)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>CrowdSec CTI (Inteligência global contra botnets) + Suricata IPS ativo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-[#B7C7D9] text-xs font-bold text-[#0070C0]">
+                        Resultado: Superfície externa de ataque nula perante varreduras da Internet.
+                    </div>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="asec-mono text-xs font-bold px-3 py-1 rounded-md bg-[#0B2545] text-[#00B0F0]">PILAR 04</span>
+                            <span class="text-3xl">⚡</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Virtualização Enxuta &amp; Disaster Recovery (DR)</h3>
+                        <p class="mt-3 text-sm text-[#555F6B] leading-relaxed">
+                            Hypervisor corporativo Proxmox VE com Switch Virtual L2 VLAN-Aware (VLAN 10 MGMT, VLAN 20 BACKUP, VLAN 30 SERVICES) com SDN Port Isolation. Cofre de credenciais Vaultwarden com criptografia assimétrica de mão única e protocolo de contingência out-of-band.
+                        </p>
+                        <ul class="mt-5 space-y-2.5 text-xs text-[#1E293B]">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Memória corporativa com autocorreção ECC (blindagem contra bitrot)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Cofre com chave privada offline: o servidor não armazena a chave de decifração</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Resgate emergencial out-of-band em &lt; 30 min mesmo com colapso do hypervisor</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-[#B7C7D9] text-xs font-bold text-[#0070C0]">
+                        Resultado: SLA contratual de RTO &lt; 1 hora para servidores e bancos de missão crítica.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 2: OS 3 TIERS DE APPLIANCE HOMOLOGADO (TABELA E CARDS COMERCIAIS)
+         =================================================================== -->
+    <section id="appliances" class="py-24" style="background-color: #F3F7FB; border-top: 1px solid #D6E2EE; border-bottom: 1px solid #D6E2EE;">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                    Portfólio Comercial Homologado
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight">
+                    Os 3 Tiers de Appliance Dedicado Asec
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Soluções entregues em regime Turnkey completo: hardware homologado, engenharia em 11 fases, pilha de software inclusa a R$ 0,00 e garantia total.
+                </p>
+            </div>
+
+            <!-- The 3 Appliance Cards -->
+            <div class="grid gap-8 mt-16 lg:grid-cols-3 items-stretch">
+                <!-- Tier 1: Standard -->
+                <div class="asec-card p-8 rounded-2xl bg-white border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="asec-mono text-xs font-bold text-[#0070C0] px-2.5 py-1 rounded bg-[#EAF3FB]">
+                                TIER 1 • ALL-IN-ONE
+                            </span>
+                            <span class="asec-mono text-[11px] text-slate-500 font-semibold">APPL-ASEC-STD</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Asec Standard</h3>
+                        <p class="mt-1 text-xs text-[#0070C0] font-semibold">Entrada Enxuta de Alta Densidade</p>
+                        <p class="mt-4 text-sm text-[#555F6B] leading-relaxed">
+                            Arquitetura compacta consolidando NGFW perimetral, Switch Virtual L2 e Storage S3 imutável em chassi único de alta eficiência.
+                        </p>
+
+                        <!-- Highlights Specs -->
+                        <div class="mt-6 space-y-3 border-t border-slate-100 pt-5 text-xs text-[#1E293B]">
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Capacidade Lógica:</span>
+                                <span class="font-bold text-[#0B2545]">Até 20 TB úteis</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Deduplicação &amp; Zstd:</span>
+                                <span class="font-bold text-emerald-600">Sim (Global Kopia)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Conectividade:</span>
+                                <span class="font-bold text-[#0B2545]">Multi-Gigabit</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Atendimento:</span>
+                                <span class="font-bold text-[#0B2545]">25 a 40 Servidores/PCs</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Licenças de Software:</span>
+                                <span class="font-bold text-emerald-600">R$ 0,00 / ano (Incluso)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1">
+                                <span class="text-slate-500">Garantia Hardware:</span>
+                                <span class="font-bold text-[#0B2545]">12 Meses c/ NF</span>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Breakdown -->
+                        <div class="mt-6 p-4 rounded-xl bg-[#F3F7FB] border border-[#B7C7D9]/60">
+                            <div class="text-xs text-slate-500">Composição do Investimento:</div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>Appliance Homologado:</span>
+                                <span class="font-semibold text-slate-700">R$ 6.240,00</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>Implantação Turnkey (11 fases):</span>
+                                <span class="font-semibold text-slate-700">R$ 3.800,00</span>
+                            </div>
+                            <div class="mt-3 pt-2 border-t border-[#B7C7D9] flex justify-between items-baseline">
+                                <span class="text-xs font-bold text-[#0B2545]">TOTAL TURNKEY:</span>
+                                <span class="text-xl font-black text-[#0070C0]">R$ 10.040,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3 rounded-xl asec-btn-navy text-sm font-bold">
+                            Cotar Tier Standard &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tier 2: Enterprise (Dual-Node ECC) - Highlighted -->
+                <div class="asec-card p-8 rounded-2xl bg-white border-2 border-[#0070C0] shadow-2xl relative flex flex-col justify-between">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#0070C0] text-white asec-mono text-[11px] font-black uppercase tracking-wider shadow">
+                        ⭐ Padrão Corporativo Recomendado
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-3 mt-1">
+                            <span class="asec-mono text-xs font-bold text-[#0070C0] px-2.5 py-1 rounded bg-[#EAF3FB]">
+                                TIER 2 • DUAL-NODE ECC
+                            </span>
+                            <span class="asec-mono text-[11px] text-slate-500 font-semibold">APPL-ASEC-ENT</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Asec Enterprise</h3>
+                        <p class="mt-1 text-xs text-[#0070C0] font-semibold">Isolamento Físico de Borda &amp; Memória ECC</p>
+                        <p class="mt-4 text-sm text-[#555F6B] leading-relaxed">
+                            2 Nós Dedicados: Nó 1 isolado para Firewall NGFW + Nó 2 para Storage e Virtualização. Equipado com memória corporativa ECC que corrige falhas de silício e previne corrupção de blocos (<em class="italic">bitrot</em>).
+                        </p>
+
+                        <!-- Highlights Specs -->
+                        <div class="mt-6 space-y-3 border-t border-slate-100 pt-5 text-xs text-[#1E293B]">
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Capacidade Lógica:</span>
+                                <span class="font-bold text-[#0B2545]">Até 40 TB úteis</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Proteção de Memória:</span>
+                                <span class="font-bold text-emerald-600">DDR4 ECC Antifalhas</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Topologia:</span>
+                                <span class="font-bold text-[#0B2545]">Dual-Node Dedicado</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Atendimento:</span>
+                                <span class="font-bold text-[#0B2545]">35 a 60 Servidores/PCs</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Licenças de Software:</span>
+                                <span class="font-bold text-emerald-600">R$ 0,00 / ano (Incluso)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1">
+                                <span class="text-slate-500">Garantia Hardware:</span>
+                                <span class="font-bold text-[#0B2545]">12 Meses c/ NF</span>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Breakdown -->
+                        <div class="mt-6 p-4 rounded-xl bg-[#EAF3FB] border border-[#0070C0]/40">
+                            <div class="text-xs text-slate-500">Composição do Investimento:</div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>2 Nós Homologados ECC:</span>
+                                <span class="font-semibold text-slate-700">R$ 9.252,22</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>Implantação Turnkey (11 fases):</span>
+                                <span class="font-semibold text-slate-700">R$ 4.500,00</span>
+                            </div>
+                            <div class="mt-3 pt-2 border-t border-[#0070C0]/30 flex justify-between items-baseline">
+                                <span class="text-xs font-bold text-[#0B2545]">TOTAL TURNKEY:</span>
+                                <span class="text-xl font-black text-[#0070C0]">R$ 13.752,22</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3.5 rounded-xl asec-btn-primary text-sm font-bold shadow-lg">
+                            Cotar Tier Enterprise &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tier 3: High-Scale 10GbE -->
+                <div class="asec-card p-8 rounded-2xl bg-white border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="asec-mono text-xs font-bold text-[#0070C0] px-2.5 py-1 rounded bg-[#EAF3FB]">
+                                TIER 3 • CLUSTER 10GbE
+                            </span>
+                            <span class="asec-mono text-[11px] text-slate-500 font-semibold">APPL-ASEC-HSC</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-[#0B2545]">Asec High-Scale</h3>
+                        <p class="mt-1 text-xs text-[#0070C0] font-semibold">Fibra Óptica 10GbE SFP+ &amp; Expansão Online</p>
+                        <p class="mt-4 text-sm text-[#555F6B] leading-relaxed">
+                            Projetado para grandes volumes de dados, bancos de altíssimo tráfego, virtualização densa ou provedores MSP. Suporta expansão de gavetas de disco sem desligar o sistema.
+                        </p>
+
+                        <!-- Highlights Specs -->
+                        <div class="mt-6 space-y-3 border-t border-slate-100 pt-5 text-xs text-[#1E293B]">
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Capacidade Lógica:</span>
+                                <span class="font-bold text-[#0B2545]">40 a 140+ TB úteis</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Conectividade:</span>
+                                <span class="font-bold text-[#0B2545]">10GbE Óptico SFP+</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Expansão de Storage:</span>
+                                <span class="font-bold text-emerald-600">Online sem parada</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Atendimento:</span>
+                                <span class="font-bold text-[#0B2545]">60 a 120+ Servidores/PCs</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-slate-100">
+                                <span class="text-slate-500">Licenças de Software:</span>
+                                <span class="font-bold text-emerald-600">R$ 0,00 / ano (Incluso)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1">
+                                <span class="text-slate-500">Garantia Hardware:</span>
+                                <span class="font-bold text-[#0B2545]">12 Meses c/ NF</span>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Breakdown -->
+                        <div class="mt-6 p-4 rounded-xl bg-[#F3F7FB] border border-[#B7C7D9]/60">
+                            <div class="text-xs text-slate-500">Composição do Investimento:</div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>Cluster 10GbE Homologado:</span>
+                                <span class="font-semibold text-slate-700">R$ 12.680,00</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1 text-xs">
+                                <span>Implantação Turnkey (11 fases):</span>
+                                <span class="font-semibold text-slate-700">R$ 5.200,00</span>
+                            </div>
+                            <div class="mt-3 pt-2 border-t border-[#B7C7D9] flex justify-between items-baseline">
+                                <span class="text-xs font-bold text-[#0B2545]">TOTAL TURNKEY:</span>
+                                <span class="text-xl font-black text-[#0070C0]">R$ 17.880,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3 rounded-xl asec-btn-navy text-sm font-bold">
+                            Cotar Tier High-Scale &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 3: PILHA DE SOFTWARE ABERTO CORPORATIVO (R$ 0,00 DE LICENÇAS)
+         =================================================================== -->
+    <section id="stack" class="py-20 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-12 items-center">
+                <div class="lg:col-span-5">
+                    <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                        Liberdade Tecnológica &amp; TCO Reduzido
+                    </span>
+                    <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight leading-tight">
+                        Software Corporativo Auditável com R$ 0,00 de Taxas Anuais
+                    </h2>
+                    <p class="mt-4 text-base text-[#555F6B] leading-relaxed">
+                        Fornecedores tradicionais como Veeam, Acronis e Datto cobram contratos cumulativos em dólar por terabyte ou socket de CPU, elevando o custo da TI a cada ano.
+                    </p>
+                    <p class="mt-3 text-base text-[#555F6B] leading-relaxed">
+                        A Asec implementa a mais sofisticada pilha de <strong class="text-[#0B2545]">Open Source Corporativo de Alta Confiabilidade</strong>. Todo o seu investimento se torna patrimônio físico próprio em um Appliance Dedicado de alta velocidade.
+                    </p>
+
+                    <div class="mt-8 p-6 rounded-2xl bg-[#FDF3E6] border-2 border-amber-300">
+                        <p class="text-xs font-bold uppercase tracking-wider text-amber-900 asec-mono">Economia Real em 3 Anos</p>
+                        <p class="mt-2 text-2xl font-black text-amber-900">Até 60% de Redução no TCO</p>
+                        <p class="mt-2 text-xs text-amber-800 leading-relaxed">
+                            Sem reajustes unilaterais, sem taxas de tráfego de saída na nuvem (<em class="italic">egress fees</em>) e sem lock-in contratual abusivo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 min-w-0">
+                    <div class="overflow-x-auto rounded-2xl border border-[#B7C7D9] shadow-md">
+                        <table class="min-w-full divide-y divide-[#B7C7D9] text-left text-xs">
+                            <thead class="bg-[#0B2545] text-white">
+                                <tr>
+                                    <th class="py-3.5 px-4 font-bold">Componente de Software</th>
+                                    <th class="py-3.5 px-4 font-bold">Função na Arquitetura</th>
+                                    <th class="py-3.5 px-4 font-bold text-center">Custo Anual</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#B7C7D9] bg-white text-[#1E293B]">
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">Proxmox VE 8.x</td>
+                                    <td class="py-3 px-4 text-slate-600">Hypervisor corporativo bare-metal e Switch Virtual L2</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">OPNsense CE 24.x</td>
+                                    <td class="py-3 px-4 text-slate-600">Firewall NGFW perimetral stateful corporativo</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">CrowdSec CTI + Suricata</td>
+                                    <td class="py-3 px-4 text-slate-600">Inteligência contra botnets globais e IPS L7 ativo</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">MinIO Community Edition</td>
+                                    <td class="py-3 px-4 text-slate-600">Storage S3 com Object Lock COMPLIANCE estrito</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">Kopia Engine + KopiaUI</td>
+                                    <td class="py-3 px-4 text-slate-600">Deduplicação por blocos, compressão zstd e AES-256</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">Tailscale WireGuard ZTNA</td>
+                                    <td class="py-3 px-4 text-slate-600">Malha Zero Trust ponto a ponto com certificados TLS</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                                <tr class="hover:bg-[#F3F7FB]">
+                                    <td class="py-3 px-4 font-bold text-[#0B2545]">Vaultwarden + Uptime Kuma</td>
+                                    <td class="py-3 px-4 text-slate-600">Cofre de segredos out-of-band e telemetria 24/7</td>
+                                    <td class="py-3 px-4 text-center font-bold text-emerald-600">R$ 0,00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="bg-[#EAF3FB] font-bold">
+                                <tr>
+                                    <td class="py-3.5 px-4 text-[#0B2545]" colspan="2">TOTAL ANUAL EM LICENÇAS DE SOFTWARE:</td>
+                                    <td class="py-3.5 px-4 text-center text-sm text-emerald-700">R$ 0,00 (INCLUSO)</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 4: PLANO DE IMPLANTAÇÃO TURNKEY (11 FASES DE ENGENHARIA)
+         =================================================================== -->
+    <section id="implantacao" class="py-24" style="background-color: #F3F7FB; border-top: 1px solid #D6E2EE; border-bottom: 1px solid #D6E2EE;">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                    Engenharia de Implantação
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight">
+                    Plano Turnkey em 11 Fases (10 Dias Úteis)
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Do levantamento técnico de volumetria ao teste destrutivo real de ransomware com live restore perante o comitê técnico do cliente.
+                </p>
+            </div>
+
+            <!-- 11 Phases Timeline Grid -->
+            <div class="grid gap-4 mt-16 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 01 • D1-D2</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Kickoff &amp; Design LLD</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Levantamento de volumetria, churn diário, sistemas operacionais (Windows VSS, Linux, ERPs) e entrega formal do LLD aprovado.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 02 • D3</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Comissionamento Físico</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Montagem física do Appliance Homologado Asec, interligação de cabeamento Cat6 certificado e validação de storage e energia.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 03 • D3-D4</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Proxmox VE &amp; OPNsense</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Deploy do hypervisor com Switch Virtual L2 VLAN-Aware e firewall OPNsense bare-metal com default-deny na WAN, CrowdSec e Suricata.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 04 • D4-D5</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Pool Redundante &amp; Hardening</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Criação do pool corporativo tolerante a falhas físicas de disco e hardening rigoroso de portas com chaves SSH Ed25519.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 05 • D5-D6</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Zero Trust ZTNA &amp; TLS</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Configuração da malha privada Tailscale WireGuard com MFA, ACLs por tag e emissão de certificados TLS automáticos.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 06 • D6-D7</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">MinIO S3 COMPLIANCE</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Provisionamento do storage MinIO S3 imutável em container leve, travamento WORM Object Lock estrito e bloqueio de exclusão.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 07 • D7</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Tenants &amp; Cofre Out-of-Band</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Automação de criação de buckets, quotas rígidas, chaves IAM e cofre Vaultwarden protegido com chave assimétrica offline age.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 08 • D7-D8</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Onboarding de Servidores</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Instalação do agente Kopia, configuração de snapshots consistentes via VSS (Windows Server/SQL) e scripts systemd (Linux).
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 09 • D9</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Telemetria &amp; Alertas 24/7</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Integração com Uptime Kuma para monitorar a API S3 e hosts, com disparos automáticos de alertas de falha ou quota &gt; 80%.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-amber-50 border-2 border-amber-300 shadow-md">
+                    <span class="asec-mono text-xs font-bold text-amber-800">FASE 10 • D9 (CRÍTICA)</span>
+                    <h3 class="mt-1 text-base font-bold text-amber-950">Simulação Real de Ransomware</h3>
+                    <p class="mt-2 text-xs text-amber-900 leading-relaxed">
+                        <strong>Teste destrutivo ao vivo:</strong> simulação de sequestro com tentativa de deletar o repositório e comprovação de restore point-in-time íntegro.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-white border border-[#B7C7D9] shadow-sm sm:col-span-2 lg:col-span-2">
+                    <span class="asec-mono text-xs font-bold text-[#0070C0]">FASE 11 • D10</span>
+                    <h3 class="mt-1 text-base font-bold text-[#0B2545]">Documentação As-Built &amp; Treinamento</h3>
+                    <p class="mt-2 text-xs text-[#555F6B] leading-relaxed">
+                        Entrega do As-Built completo da infraestrutura, runbooks operacionais de contingência e treinamento prático da equipe de TI do cliente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Incontestable Acceptance Callout -->
+            <div class="mt-12 p-8 rounded-2xl bg-[#0B2545] text-white border-2 border-[#00B0F0] shadow-xl">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div>
+                        <span class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Critério de Aceite Inegociável</span>
+                        <h4 class="mt-1 text-xl font-extrabold text-white">
+                            Laudo Técnico nmap Zero Portas + Live Restore Comprovado
+                        </h4>
+                        <p class="mt-2 text-sm text-[#A8BED6] max-w-3xl leading-relaxed">
+                            A implantação só é dada por concluída após a emissão de laudo formal comprovando zero portas de entrada vulneráveis na WAN pública e a restauração funcional de dados diante da equipe de TI.
+                        </p>
+                    </div>
+                    <a href="{{ "/contato/" | relURL }}" class="shrink-0 asec-btn-primary text-sm font-bold">
+                        Agendar Implantação Turnkey &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 5: GESTÃO CONTINUADA BAAS & DRAAS (PLANOS MENSAIS)
+         =================================================================== -->
+    <section id="planos" class="py-24 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                    Serviços Gerenciados de Continuidade
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight">
+                    Planos Mensais de Gestão BaaS &amp; DRaaS
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Mantenha sua infraestrutura de proteção monitorada ininterruptamente por especialistas em cibersegurança e recuperação de desastres.
+                </p>
+            </div>
+
+            <div class="grid gap-8 mt-16 lg:grid-cols-3 items-stretch">
+                <!-- Plano Essencial -->
+                <div class="asec-card p-8 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] flex flex-col justify-between">
+                    <div>
+                        <span class="asec-mono text-xs font-bold text-[#0070C0] px-2.5 py-1 rounded bg-[#EAF3FB]">
+                            SUPORTE COMERCIAL
+                        </span>
+                        <h3 class="mt-3 text-2xl font-extrabold text-[#0B2545]">Plano Essencial</h3>
+                        <p class="mt-1 text-xs text-slate-500">Monitoração e Suporte Operacional 8x5</p>
+                        
+                        <div class="mt-6 pb-6 border-b border-[#B7C7D9]">
+                            <span class="text-3xl font-black text-[#0B2545]">R$ 690,00</span>
+                            <span class="text-xs text-slate-500 font-semibold"> / mês</span>
+                        </div>
+
+                        <ul class="mt-6 space-y-3 text-xs text-[#1E293B]">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Monitoramento contínuo 24/7 (Uptime Kuma)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Alertas automáticos de falha de rotina ou quota &gt; 80%</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Suporte técnico N2/N3 em horário comercial (8x5)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>SLA de atendimento de até <strong>4 horas úteis</strong></span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Gestão de retenção e quotas de armazenamento</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3 rounded-xl asec-btn-navy text-sm font-bold">
+                            Contratar Essencial &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plano Corporativo (Recomendado) -->
+                <div class="asec-card p-8 rounded-2xl bg-white border-2 border-[#0070C0] shadow-2xl relative flex flex-col justify-between">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#0070C0] text-white asec-mono text-[11px] font-black uppercase tracking-wider shadow">
+                        ⭐ Mais Escolhido pelas Empresas
+                    </div>
+
+                    <div>
+                        <span class="asec-mono text-xs font-bold text-[#0070C0] px-2.5 py-1 rounded bg-[#EAF3FB]">
+                            RESILIÊNCIA AVANÇADA
+                        </span>
+                        <h3 class="mt-3 text-2xl font-extrabold text-[#0B2545]">Plano Corporativo</h3>
+                        <p class="mt-1 text-xs text-[#0070C0] font-semibold">Auditorias Periódicas &amp; Simulação de Desastre</p>
+                        
+                        <div class="mt-6 pb-6 border-b border-slate-100">
+                            <span class="text-3xl font-black text-[#0070C0]">R$ 1.190,00</span>
+                            <span class="text-xs text-slate-500 font-semibold"> / mês</span>
+                        </div>
+
+                        <ul class="mt-6 space-y-3 text-xs text-[#1E293B]">
+                            <li class="flex items-center gap-2 font-semibold">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Tudo incluso no Plano Essencial</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Auditoria mensal de integridade de blocos (<em class="italic">deep scrub</em>)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Simulação semestral de Disaster Recovery (<em class="italic">Chaos Drill</em>)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>Suporte estendido para novos endpoints (12x5)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#0070C0] font-bold">✓</span>
+                                <span>SLA de resposta prioritário de até <strong>2 horas úteis</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3.5 rounded-xl asec-btn-primary text-sm font-bold shadow-lg">
+                            Contratar Corporativo &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plano Avançado 24/7 -->
+                <div class="asec-card p-8 rounded-2xl bg-[#081C36] text-white border border-[#00B0F0]/50 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <span class="asec-mono text-xs font-bold text-[#00B0F0] px-2.5 py-1 rounded bg-[#00B0F0]/20">
+                            PLANTÃO 24/7/365
+                        </span>
+                        <h3 class="mt-3 text-2xl font-extrabold text-white">Plano Avançado 24/7</h3>
+                        <p class="mt-1 text-xs text-[#A8BED6]">Missão Crítica &amp; Incidentes Imediatos</p>
+                        
+                        <div class="mt-6 pb-6 border-b border-white/10">
+                            <span class="text-3xl font-black text-[#00B0F0]">R$ 1.890,00</span>
+                            <span class="text-xs text-[#A8BED6] font-semibold"> / mês</span>
+                        </div>
+
+                        <ul class="mt-6 space-y-3 text-xs text-[#CBD5E1]">
+                            <li class="flex items-center gap-2 font-semibold text-white">
+                                <span class="text-[#00B0F0] font-bold">✓</span>
+                                <span>Tudo incluso no Plano Corporativo</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#00B0F0] font-bold">✓</span>
+                                <span>Plantão 24/7/365 para incidentes críticos de ransomware</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#00B0F0] font-bold">✓</span>
+                                <span>Simulações trimestrais de Disaster Recovery</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#00B0F0] font-bold">✓</span>
+                                <span>Resgate emergencial out-of-band prioritário</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#00B0F0] font-bold">✓</span>
+                                <span>SLA de resposta crítica de até <strong>1 hora contínua</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="{{ "/contato/" | relURL }}" class="block w-full text-center py-3 rounded-xl asec-btn-outline text-sm font-bold">
+                            Contratar Avançado 24/7 &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 6: DISASTER RECOVERY & MATRIZ DE RTO / RPO
+         =================================================================== -->
+    <section id="matriz-sla" class="py-24 asec-dark-section border-t-4 border-[#00B0F0]">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#00B0F0] px-3 py-1 rounded-full bg-[#00B0F0]/15 border border-[#00B0F0]/30">
+                    Continuidade de Negócios &amp; Resiliência
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-4xl tracking-tight">
+                    Matriz Contratual de Disaster Recovery (RTO e RPO)
+                </h2>
+                <p class="mt-4 text-lg text-[#A8BED6]">
+                    Métricas objetivas acordadas em contrato. Sem suposições quando cada minuto fora do ar representa prejuízo financeiro.
+                </p>
+            </div>
+
+            <!-- SLA Table -->
+            <div class="mt-16 overflow-x-auto rounded-2xl border border-[#00B0F0]/30 shadow-2xl">
+                <table class="min-w-full divide-y divide-[#00B0F0]/30 text-left text-xs sm:text-sm">
+                    <thead class="bg-[#051428] text-white">
+                        <tr>
+                            <th class="py-4 px-5 font-bold">Tier de Criticidade</th>
+                            <th class="py-4 px-5 font-bold">Ativos &amp; Aplicações Cobertas</th>
+                            <th class="py-4 px-5 font-bold text-center">RPO Alvo (Perda Máx.)</th>
+                            <th class="py-4 px-5 font-bold text-center">RTO Alvo (Retorno Máx.)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/10 bg-[#0B2545] text-slate-200">
+                        <tr>
+                            <td class="py-4 px-5 font-bold text-[#00B0F0]">Tier 1 — Missão Crítica</td>
+                            <td class="py-4 px-5 text-[#A8BED6]">Bancos de dados relacionais (SQL Server, PostgreSQL), ERPs (TOTVS, SAP) e Cofre de Segredos</td>
+                            <td class="py-4 px-5 text-center font-bold text-emerald-400">1 a 4 horas</td>
+                            <td class="py-4 px-5 text-center font-bold text-emerald-400">&lt; 1 hora</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-5 font-bold text-white">Tier 2 — Cargas Corporativas</td>
+                            <td class="py-4 px-5 text-[#A8BED6]">Servidores de aplicação, Controladores de Domínio (AD/DNS), Servidores Web e File Servers</td>
+                            <td class="py-4 px-5 text-center font-bold text-slate-300">4 a 12 horas</td>
+                            <td class="py-4 px-5 text-center font-bold text-slate-300">1 a 2 horas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-5 font-bold text-white">Tier 3 — Dados Gerais</td>
+                            <td class="py-4 px-5 text-[#A8BED6]">Compartilhamentos departamentais, documentação interna, laptops executivos e estações de trabalho</td>
+                            <td class="py-4 px-5 text-center font-bold text-slate-300">24 horas (diário)</td>
+                            <td class="py-4 px-5 text-center font-bold text-slate-300">2 a 4 horas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Contingency Protocol Highlight Box -->
+            <div class="mt-12 p-8 rounded-2xl bg-[#081C36] border border-[#00B0F0]/40">
+                <div class="grid gap-8 lg:grid-cols-12 items-center">
+                    <div class="lg:col-span-8">
+                        <span class="asec-mono text-xs font-bold text-[#00B0F0] uppercase tracking-wider">Protocolo de Contingência Extrema</span>
+                        <h3 class="mt-2 text-2xl font-bold text-white">
+                            E se a virtualização e o servidor principal colapsarem?
+                        </h3>
+                        <p class="mt-3 text-sm text-[#A8BED6] leading-relaxed">
+                            Projetamos a arquitetura para o pior cenário. Os dados do cliente são cifrados na origem com criptografia Zero-Knowledge (o invasor não lê nada). O cofre corporativo de credenciais utiliza chave pública assimétrica e a chave privada mestra permanece armazenada em mídia física offline (Air-Gap).
+                        </p>
+                        <p class="mt-2 text-sm text-[#A8BED6] leading-relaxed">
+                            A cada 4 horas, cópias do cofre são despachadas out-of-band. Em caso de colapso físico ou invasão total do servidor, a engenharia da Asec executa o script de resgate em qualquer máquina externa, restabelecendo o cofre e o acesso aos backups em <strong class="text-white">menos de 30 minutos</strong>.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 text-center lg:text-right">
+                        <div class="inline-block p-6 rounded-2xl bg-[#051428] border border-[#00B0F0]/30">
+                            <p class="asec-mono text-4xl font-extrabold text-[#00B0F0]">&lt; 30 min</p>
+                            <p class="mt-1 text-xs text-white font-bold uppercase tracking-wider">Resgate Emergencial</p>
+                            <p class="mt-1 text-[11px] text-[#A8BED6]">Chave offline &amp; Break-Glass Kit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 7: BATTLECARD & FAQ (QUEBRA DAS 4 PRINCIPAIS OBJEÇÕES)
+         =================================================================== -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="asec-mono text-xs font-bold uppercase tracking-widest text-[#0070C0] px-3 py-1 rounded-full bg-[#EAF3FB]">
+                    Esclarecimento Técnico &amp; Comercial
+                </span>
+                <h2 class="mt-4 text-3xl font-extrabold text-[#0B2545] sm:text-4xl tracking-tight">
+                    Perguntas Frequentes &amp; Comparativos Técnicos
+                </h2>
+                <p class="mt-4 text-lg text-[#555F6B]">
+                    Entenda por que a abordagem da Asec supera sincronizadores de nuvem, licenças proprietárias e storages NAS comuns.
+                </p>
+            </div>
+
+            <div class="mt-16 space-y-6 max-w-4xl mx-auto" x-data="{ active: 1 }">
+                <!-- FAQ 1 -->
+                <div class="p-6 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] transition-all">
+                    <button @click="active = (active === 1 ? null : 1)" class="w-full flex items-center justify-between text-left focus:outline-none">
+                        <span class="text-lg font-bold text-[#0B2545] flex items-center gap-3">
+                            <span class="text-[#0070C0] asec-mono">01.</span>
+                            Já temos backup na nuvem (Google Drive, OneDrive ou AWS S3 básico). Isso não é suficiente?
+                        </span>
+                        <svg class="w-5 h-5 text-[#0070C0] transform transition-transform" :class="{'rotate-180': active === 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="active === 1" x-collapse class="mt-4 pt-4 border-t border-[#B7C7D9] text-sm text-[#555F6B] leading-relaxed">
+                        <p>
+                            Ferramentas como Google Drive e OneDrive são sincronizadores de arquivos em tempo real. Se um ransomware criptografar seus arquivos locais, essa versão sequestrada é replicada em segundos para a nuvem, sobrescrevendo seus dados válidos.
+                        </p>
+                        <p class="mt-2">
+                            Além disso, repositórios S3 padrão na nuvem cobram altas taxas ocultas de tráfego de saída (<em class="italic">egress fees</em>) e o download de múltiplos terabytes pela Internet leva dias com sua empresa paralisada. A Asec implementa a Estratégia 3-2-1-1-0: dados em storage local de altíssima velocidade para restauração imediata na rede local, combinados à imutabilidade WORM que impede qualquer exclusão ou adulteração.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="p-6 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] transition-all">
+                    <button @click="active = (active === 2 ? null : 2)" class="w-full flex items-center justify-between text-left focus:outline-none">
+                        <span class="text-lg font-bold text-[#0B2545] flex items-center gap-3">
+                            <span class="text-[#0070C0] asec-mono">02.</span>
+                            Por que não continuar pagando licenças de software como Veeam ou Acronis?
+                        </span>
+                        <svg class="w-5 h-5 text-[#0070C0] transform transition-transform" :class="{'rotate-180': active === 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="active === 2" x-collapse class="mt-4 pt-4 border-t border-[#B7C7D9] text-sm text-[#555F6B] leading-relaxed">
+                        <p>
+                            Veeam e Acronis são softwares consolidados, mas seu modelo comercial impõe contratos perpétuos calculados por terabyte ou socket de CPU, com reajustes unilaterais atrelados ao dólar.
+                        </p>
+                        <p class="mt-2">
+                            Com a Asec, a stack de software enterprise é inclusa com <strong>R$ 0,00 de licenças anuais</strong>. Todo o seu investimento é revertido em patrimônio físico próprio em um Appliance Dedicado de alta velocidade e blindagem patrimonial da sua empresa, gerando economia de dezenas de milhares de reais nos próximos 3 a 5 anos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="p-6 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] transition-all">
+                    <button @click="active = (active === 3 ? null : 3)" class="w-full flex items-center justify-between text-left focus:outline-none">
+                        <span class="text-lg font-bold text-[#0B2545] flex items-center gap-3">
+                            <span class="text-[#0070C0] asec-mono">03.</span>
+                            Software Open Source corporativo é realmente seguro e confiável para operações sérias?
+                        </span>
+                        <svg class="w-5 h-5 text-[#0070C0] transform transition-transform" :class="{'rotate-180': active === 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="active === 3" x-collapse class="mt-4 pt-4 border-t border-[#B7C7D9] text-sm text-[#555F6B] leading-relaxed">
+                        <p>
+                            As maiores infraestruturas de dados do planeta — incluindo a nuvem da AWS, do Google e da Cloudflare — operam exatamente sobre Linux, FreeBSD e WireGuard. Diferente de softwares proprietários de código fechado que ocultam vulnerabilidades e portas de entrada secretas de fabricantes, o código aberto enterprise é auditado continuamente pela comunidade global de cibersegurança.
+                        </p>
+                        <p class="mt-2">
+                            Além disso, nós não pedimos para o cliente apenas confiar: comprovamos na prática entregando laudo de zero portas expostas e executando uma simulação real de ataque de ransomware ao vivo antes do aceite final da implantação.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="p-6 rounded-2xl bg-[#F3F7FB] border border-[#B7C7D9] transition-all">
+                    <button @click="active = (active === 4 ? null : 4)" class="w-full flex items-center justify-between text-left focus:outline-none">
+                        <span class="text-lg font-bold text-[#0B2545] flex items-center gap-3">
+                            <span class="text-[#0070C0] asec-mono">04.</span>
+                            Por que não comprar um storage NAS comercial de prateleira (Synology ou QNAP)?
+                        </span>
+                        <svg class="w-5 h-5 text-[#0070C0] transform transition-transform" :class="{'rotate-180': active === 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="active === 4" x-collapse class="mt-4 pt-4 border-t border-[#B7C7D9] text-sm text-[#555F6B] leading-relaxed">
+                        <p>
+                            NAS comerciais de entrada são os alvos favoritos de famílias inteiras de ransomware (como DeadBolt, Qlocker e eChoraix), que exploram falhas recorrentes em seus sistemas proprietários de prateleira.
+                        </p>
+                        <p class="mt-2">
+                            Além disso, aparelhos NAS convencionais não contam com isolamento de perímetro corporativo, Switch Virtual L2 nem memória ECC antifalhas nessa faixa de preço. A Asec não vende um simples HD externo de rede: entregamos uma <strong>Solução Completa de Engenharia em Camadas</strong> com NGFW integrado, malha Zero Trust WireGuard e repositório estritamente imutável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 8: A GARANTIA INCONTESTÁVEL ASEC & CTA EXECUTIVO
+         =================================================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="asec-hero-bg rounded-3xl p-8 sm:p-14 lg:p-16 border-2 border-[#00B0F0]/50 shadow-2xl">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="asec-pill mb-5">🛡️ GARANTIA TÉCNICA INCONDICIONAL</span>
+                    <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                        Teste destrutivo ao vivo: se o ransomware corromper o repositório, você não paga a implantação.
+                    </h2>
+                    <p class="mt-4 text-lg text-[#CBD5E1] leading-relaxed">
+                        Temos certeza absoluta da nossa engenharia. Durante a implantação, executamos na sua frente uma tentativa real de sequestro e destruição do repositório. O risco da contratação é 100% nosso.
+                    </p>
+
+                    <!-- Direct Form -->
+                    <form method="POST" action="https://formspree.io/f/movlrpne" accept-charset="UTF-8" class="mt-9 sm:mx-auto sm:flex sm:max-w-xl gap-3">
+                        <div class="flex-1 min-w-0">
+                            <label for="servicos-cta-email-list" class="sr-only">E-mail Corporativo</label>
+                            <input id="servicos-cta-email-list" type="email" name="email" required class="block w-full px-5 py-4 text-base text-slate-900 bg-white placeholder-slate-400 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-[#00B0F0]" placeholder="seu.nome@suaempresa.com.br">
+                        </div>
+                        <div class="mt-3 sm:mt-0">
+                            <button type="submit" class="w-full sm:w-auto px-8 py-4 text-base rounded-xl asec-btn-primary cursor-pointer font-bold">
+                                Solicitar Diagnóstico
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-center items-center gap-6 text-xs text-[#A8BED6]">
+                        <span class="flex items-center gap-2">
+                            <span class="text-[#00B0F0]">✉️</span>
+                            <a href="mailto:contato@asec.com.br" class="text-white hover:text-[#00B0F0] asec-mono">contato@asec.com.br</a>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <span class="text-[#00B0F0]">🛡️</span>
+                            <a href="mailto:noc@asec.com.br" class="text-white hover:text-[#00B0F0] asec-mono">noc@asec.com.br</a>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <span class="text-[#00B0F0]">🌐</span>
+                            <span class="text-white asec-mono">www.asec.com.br</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}
